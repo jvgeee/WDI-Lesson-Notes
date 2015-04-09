@@ -5,4 +5,5 @@
 * [Intro to CLI](w1_d2_intro_to_cli.md)
 * [Git and Github](w1_d2_git_and_github.md)
 * [Intro to Ruby](w1_d2_intro_to_ruby.md)
+   * Controlling Flow with Ruby
 
