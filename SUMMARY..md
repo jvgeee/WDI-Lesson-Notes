@@ -12,5 +12,5 @@
    * [Custom Methods](w1_d4_custom_methods.md)
    * [Enumerators and Enumerables](w1_d5_enumerators_enumerables.md)
    * [OOP in Ruby](w2_d1_oop_ruby.md)
-   * Custom Classes
+   * [Custom Classes](w2_d1_custom_classes_ruby.md)
 
