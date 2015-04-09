@@ -15,4 +15,5 @@
    * [Custom Classes](w2_d1_custom_classes_ruby.md)
    * [Multiple Classes](w2_d1_multiple_classes_ruby.md)
 * [TDD / JS / Front-End](w2_d2_intro_to_tdd.md)
+   * OOP in Javascript
 
