@@ -14,4 +14,5 @@
    * [OOP in Ruby](w2_d1_oop_ruby.md)
    * [Custom Classes](w2_d1_custom_classes_ruby.md)
    * [Multiple Classes](w2_d1_multiple_classes_ruby.md)
+* TDD / JS / Front-End
 
