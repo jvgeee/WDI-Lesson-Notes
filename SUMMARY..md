@@ -7,5 +7,5 @@
 * [Git and Github](w1_d2_git_and_github.md)
 * [Intro to Ruby](w1_d2_intro_to_ruby.md)
    * [Controlling Flow with Ruby](w1_d2_control_flow_ruby.md)
-   * Arrays, Hashes and Symbols
+   * [Arrays, Hashes and Symbols](w1_d4_arrays_hashes_symbols.md)
 
