@@ -1,4 +1,6 @@
-WDI LDN12 Lesson Notes & Completed Examples
+WDI MELB2 Lesson Notes & Completed Examples
 ===========================================
 
-If you want to edit something in one of the notes, please create a comment and/or create a pull request.
+All of these come from our friends in London campus who did the last curriculum (which lead with Ruby instead of Javascript). 
+
+Use as a great refresher and to help consolidate your learning so far!
