@@ -11,4 +11,5 @@
    * [Methods and Blocks](w1_d4_methods_and_blocks.md)
    * [Custom Methods](w1_d4_custom_methods.md)
    * [Enumerators and Enumerables](w1_d5_enumerators_enumerables.md)
+   * OOP in Ruby
 
