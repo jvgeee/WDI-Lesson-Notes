@@ -17,4 +17,5 @@
 * [TDD / JS / Front-End](w2_d2_intro_to_tdd.md)
    * [Scopes in Javascript](w2_d2_scopes-in_javascript.md)
    * [OOP in Javascript](w2_d2_javascript_oop.md)
+   * Intro to HTML
 
