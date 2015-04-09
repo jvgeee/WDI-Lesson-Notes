@@ -1,0 +1,10 @@
+<h1>All Members</h1>
+<ul class="members">
+  <% @friends.each do |person| %>
+    <li>
+      <a href="/people/<%= person["id"] %>">
+        <%= "#{person["first"]} #{person["last"]}" %>
+      </a>
+    </li>  
+  <% end %>
+</ul>

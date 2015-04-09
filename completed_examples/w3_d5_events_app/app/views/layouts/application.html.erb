@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title><%= content_for?(:title) ? yield(:title) : "Planr" %></title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "vendor/modernizr" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <header>
+    <nav class="top-bar row" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><i class="fa fa-calendar-o fa-lg"></i><%= link_to "Planr", root_path  %>
+          </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="has-dropdown not-click">
+            <%= link_to "Explore", "#" %>
+            <ul class="dropdown">
+              <li><%= link_to "Cities", cities_path %></li>
+              <li><%= link_to "Clubs", clubs_path %></li>
+              <li><%= link_to "Events", events_path %></li>
+              <li><%= link_to "Users", users_path %></li>
+            </ul>
+          </li>
+          <li class="has-dropdown not-click">
+            <%= link_to "Create", "#" %>
+            <ul class="dropdown">
+              <li><%= link_to "Event", new_event_path %></li>
+              <li><%= link_to "Club", new_club_path %></li>
+              <li><%= link_to "City", new_city_path %></li>
+              <li><%= link_to "User", new_user_path %></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <p id="notice"><%= notice %></p>
+
+  <main class="row">
+    <%= yield %>
+  </main>
+
+  <footer>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<html>
+  <head>
+    <style>
+      body{ margin-top:50px;}
+      #hover_it{width: 500px;height:500px;background-color: red}
+    </style>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(function(){
+        $("#mouse_event").focus()
+        
+        $("#mouse_event").blur(function(){
+          console.log("Leaved the input !")
+        });
+
+        $("#hover_it").hover(
+          function(){
+          console.log("mouse over the div");
+        },
+          function(){
+          console.log("mouse left the div");
+        })
+        
+        $("#radio_event").change(function(){
+          console.log( "radio selected" )
+        })
+
+        $("#radio_event").change(function(){
+          $("#mouse_event").attr("value",$(this).attr("id"))
+        })
+
+        $("#form_event").submit(function(e){
+          result = run_my_validations();
+          if(result){
+
+          }
+          else{
+            console.log("validation failed");
+          }
+          return false;
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <form id="form_event">
+      <input id="mouse_event">
+      <select id="select_event">
+        <option>----</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab" >Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="radio" id="radio_event">
+      <input type="radio" id="radio_event2">
+      <input type="radio" id="radio_event3">
+      <button>Submit</button>
+      <input type="submit" value="hiya"/>
+    </form>
+    <div id="hover_it"></div>
+  </body>
+</html>

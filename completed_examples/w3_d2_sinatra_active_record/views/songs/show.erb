@@ -1,0 +1,11 @@
+<h2><%= @song.title %> by <%= @artist.name %></h2>
+
+<p><strong>Album:</strong> <%= @song.album %></p>
+
+</br>
+<audio src="<%= @song.preview_url %>" controls></audio>
+</br>
+
+<p><strong>Price:</strong> $<%= @song.price / 100.0 if @song.price %></p>
+
+<a href="/songs/<%= @song.id %>/edit">Edit</a>

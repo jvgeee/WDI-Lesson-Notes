@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/css/style.css'>
+  <script src='/js/jquery-1.9.1.js'></script>
+  <script src='/js/bootstrap.min.js'></script>
+  <title>DogeTube | Part of the MemeTube Group</title>
+</head>
+<body>
+  <%= erb :nav %>
+  <main class="container">
+    <div class="row">
+      <h1><%= @title %></h1>
+      <%= yield %>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="row">
+      &copy; Le Geraud and Le Chinage.
+    </div>
+  </footer>
+</body>
+</html>

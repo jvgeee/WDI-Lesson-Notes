@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style type="text/css">
+      #parent{
+        width: 500px;
+        height: 500px;
+        background-color: green;
+      }
+      #children_1{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+      }
+
+      #children_2{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#parent").on("click", function(){
+          console.log("#parent click")
+        })
+
+        $("#children_1").on("click", function(e){
+          e.stopPropagation()
+          console.log("#children_1 click")
+        })
+
+        $("#children_2").on("click", function(){
+          console.log("#children_2 click")
+        })
+        
+      });
+    </script>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="children_1">
+        <div id="children_2">
+
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>

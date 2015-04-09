@@ -1,0 +1,12 @@
+<section>
+  <header><h1>Results</h1></header>
+  <p>
+    <% if @result %>
+
+      The result of <%=@first%> <%=@operator%> <%=@second%> is <%= @result %>
+        
+    <% elsif @bmi_result %>
+      Your BMI is <%= sprintf("%0.01f",@bmi_result)  %>
+    <% end %>
+  </p>
+</section>

@@ -1,0 +1,7 @@
+body {
+  background: pink;
+  width: 500px;
+  margin:100px auto;
+  border: 5px dashed blue;
+  padding: 10px;
+}

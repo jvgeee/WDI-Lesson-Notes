@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <title>Click Events</title>
+  <head></head>
+  <body>
+    <button onclick="alert('Hello WDI!');">I'm an inline button!</button>
+    <button id="event_click">click</button>
+    <button id="event_dblclick">dblclick</button>
+    <button id="event_mousedown_mouseup">Mousedown Mouseup</button>
+    <button id="add_element">Add</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("event_click").addEventListener("click", function(e) {
+        alert("I've been clicked!");
+      });
+
+      // jQuery
+      // $("#event_click").onclick(function() {
+      //   alert("I've been clicked!");
+      // });
+
+      document.getElementById("event_dblclick").addEventListener("dblclick", function(e) {
+        alert("I've been dblclicked !");
+      });
+
+      // $("#event_dblclick").dblclick(function() {
+      //   alert("I've been double clicked!")
+      //    });
+
+      document.getElementById("add_element").addEventListener("click", function() {
+          var b = document.createElement("button");
+          var btext = document.createTextNode("Added Live");
+            
+          b.appendChild(btext);
+          b.id = 'live_added';
+          b.addEventListener("click", function() {
+            alert("I've been clicked and I've been dynamically addded! ")
+          });    
+    
+          document.body.appendChild(b);
+      });
+
+    //   $('#add_element').click(function(){
+    // $('body').append('<button class="live_added">Added Live</button>')
+    // });
+
+      document.getElementById("event_mousedown_mouseup").addEventListener("mousedown", function(e) {
+        console.log("mousedown on button");
+      });
+
+      // $("#event_mousedown_mouseup").mousedown(function(e) {
+      //   console.log("mousedown on button");
+      // });
+
+      document.getElementById("event_mousedown_mouseup").addEventListener("mouseup", function(e) {
+        console.log("mouseup on button");
+      });
+
+      //combined
+      // $("#event_mousedown_mouseup").mousedown(function(e) {
+      //   console.log("mousedown on button");
+      // }).mouseup(function(e) {
+      //   console.log("mouseup on button");
+      // });
+
+    </script>
+  </body>
+</html>

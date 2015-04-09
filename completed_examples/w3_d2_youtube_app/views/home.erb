@@ -1,0 +1,12 @@
+<a href="/videos/new">Add a new video</a>
+<ul>
+  <% @videos.each do |vid| %>
+    <li>
+      <a href="/videos/<%= vid["id"] %>">
+        <%= vid["title"] %>
+      </a>
+    </li>
+  <% end %>
+
+
+</ul>

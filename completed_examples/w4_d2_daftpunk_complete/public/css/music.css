@@ -1,0 +1,73 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #08080a;
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+  color: white;
+  text-indent: -9999px;
+  font-weight: 600;
+  font-size: 2.5em;
+  background: url('/images/logo.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  line-height: 150px;
+}
+
+h5 {
+  color: white;
+  font-weight: lighter;
+  text-align: right;
+  padding-right: 3px;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  padding-top: 25px;
+}
+
+#player a {
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+  color: #ea422c;
+  margin: 4px 2px;
+  text-decoration: none;
+  border: 2px solid #222;
+}
+
+/*row1*/
+#player a:nth-child(-n+4){
+  color: rgba(234, 66, 44, 0.5);
+}
+
+/*row2*/
+#player a:nth-child(n+5):nth-child(-n+8) {
+  color: rgba(242,239,174,0.5);
+}
+
+/*row3*/
+#player a:nth-child(n+9):nth-child(-n+12) {
+  color: rgba(236,196,0,0.5);
+}
+
+/*row3*/
+#player a:nth-child(n+13):nth-child(-n+16) {
+  color: rgba(192,0,0,0.5);
+}
+
+#player a:hover {
+  background: url('/images/head.gif') no-repeat;
+  background-size: 200px 140px;
+  background-position: -45px;
+  color: white !important;
+  text-shadow: 0 2px #000;;
+  font-weight: 900;
+  border: 2px solid rgb(235,196,55);
+}

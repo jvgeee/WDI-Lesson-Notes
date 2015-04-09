@@ -1,0 +1,20 @@
+<div class="profile">
+  <h1><%= @user.name %></h1>
+  <%= image_tag @user.image, class: "th" %>
+
+  <p><%= @user.email %></p>
+
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>
+
+<ul class="tabs" data-tab>
+  <li class="tab-title"><a href="#panel1">Likes</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <h2>Likes</h2>
+    <%= render @likes %>
+  </div>
+</div>
+
