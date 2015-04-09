@@ -21,4 +21,5 @@
    * [Intro to CSS](w2_d3_intro_to_css.md)
 * [Intro to Sinatra](w2_d4_intro_to_sinatra.md)
    * [Sinatra Post](w2_d4_sinatra_post.md)
+   * Intro to Databases
 
