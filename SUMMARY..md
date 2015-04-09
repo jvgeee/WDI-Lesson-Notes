@@ -18,4 +18,5 @@
    * [Scopes in Javascript](w2_d2_scopes-in_javascript.md)
    * [OOP in Javascript](w2_d2_javascript_oop.md)
    * [Intro to HTML](w2_d3_intro_to_html.md)
+   * Intro to CSS
 
