@@ -22,5 +22,5 @@
 * [Intro to Sinatra and Databases](w2_d4_intro_to_sinatra.md)
    * [Sinatra Post](w2_d4_sinatra_post.md)
    * [Intro to Databases](w3_d1_intro_to_databases.md)
-   * Sinatra Activerecord
+   * [Sinatra Activerecord](w3_d2_sinatra_active_record.md)
 
