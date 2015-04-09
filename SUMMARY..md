@@ -9,5 +9,5 @@
    * [Controlling Flow with Ruby](w1_d2_control_flow_ruby.md)
    * [Arrays, Hashes and Symbols](w1_d4_arrays_hashes_symbols.md)
    * [Methods and Blocks](w1_d4_methods_and_blocks.md)
-   * Custom Methods
+   * [Custom Methods](w1_d4_custom_methods.md)
 
