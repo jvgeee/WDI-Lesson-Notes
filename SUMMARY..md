@@ -19,5 +19,5 @@
    * [OOP in Javascript](w2_d2_javascript_oop.md)
    * [Intro to HTML](w2_d3_intro_to_html.md)
    * [Intro to CSS](w2_d3_intro_to_css.md)
-* Intro to Sinatra
+* [Intro to Sinatra](w2_d4_intro_to_sinatra.md)
 
