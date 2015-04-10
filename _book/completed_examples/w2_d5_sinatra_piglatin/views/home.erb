@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PigLatin Translator</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <%= css :application %>
+  <%= js :application %>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="top-bar" data-topbar role="navigation">
+        <div class="row">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/">The PigLatin Translator</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <h1>PigLatin Translator</h1>
+        <form class="translate" action="/translate" method="post">
+          <input type="text" name="translate" autofocus>
+          <button>Translate</button>
+        </form>
+        <a href="/">Reset</a>
+
+        <% if @translation %>
+        <h2><%= @translation %></h2>
+        <% end %>
+      </div>
+    </main>
+    <div class="push"></div>
+  </div>
+  <footer>&copy; Le Chinage and Le Gerage</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* FOUNDATION OVERRIDES */
+
+/* TOP BAR*/
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar .fa {
+  font-size: 1.5rem;
+  vertical-align: 0;
+  color: #222;
+}
+
+.top-bar .name h1 a {
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  color: #e2373c;
+}
+
+
+/* MAIN */
+
+main.row {
+  background: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row .button:last-child {
+  margin: 0;
+}
+
+main.row .row {
+  margin-bottom: 20px;
+}
+
+/* SLIDER */
+
+.example-orbit-content,
+.orbit-bullets-container,
+.orbit-bullets {
+  background: #222;
+  text-align: center;
+  color: #fff;
+}
+
+.example-orbit-content h2,
+.example-orbit-content h3, 
+.example-orbit-content p {
+  color: #fff;
+}
+/* PROFILE */
+
+.profile {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.profile .th {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}

@@ -1,0 +1,20 @@
+<div class="row">
+  <% @rows.each do |row| %>
+  <% @url = row['url'] %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= erb :youtube %>
+      <div class="caption">
+        <h3><%= row['title'] %></h3>
+        <p><%= row['description'] %></p>
+        <div class="btn-group" role="group" aria-label="...">
+          <form action='/videos/<%= row['id'] %>/delete' method='post'>
+            <button class="btn btn-default">Delete</button>
+          </form>
+          <a class="btn btn-default" href='/videos/<%= row['id'] %>/edit/'>Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

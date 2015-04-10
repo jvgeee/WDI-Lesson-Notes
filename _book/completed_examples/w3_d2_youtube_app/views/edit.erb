@@ -1,0 +1,7 @@
+<form action="/videos/<%= @video["id"]%>" method="post">
+  <input name="title" placeholder="title" value="<%= @video["title"] %>">
+  <input name="description" placeholder="description" value="<%= @video["description"] %>">
+  <input name="url" placeholder="url" value="<%= @video["url"] %>">
+  <input name="genre" placeholder="genre" value="<%= @video["genre"] %>">
+  <button>Submit </button>
+</form>

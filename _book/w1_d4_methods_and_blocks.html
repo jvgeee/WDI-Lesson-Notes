@@ -1,0 +1,838 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Methods and Blocks | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d4_custom_methods.html" />
+    
+    
+    <link rel="prev" href="./w1_d4_arrays_hashes_symbols.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.3" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="methods-and-blocks">Methods and blocks</h1>
+<h2 id="opening-introduction-to-methods">Opening: Introduction to methods</h2>
+<h4 id="ask-class">Ask class</h4>
+<p>What is everything in Ruby?</p>
+<ul>
+<li>An object.</li>
+</ul>
+<p>Let&apos;s have a think about what that means. <strong>Different objects can do different things</strong>, or more precisely, <strong>different objects understand how to do different things</strong>. If I ask that table to &quot;stand&quot;, then it would stand still because that&apos;s what it does. If I could control nature and I asked a bunny, &quot;hop&quot; - it would understand what that meant. </p>
+<p>However, some objects just wouldn&apos;t understand what I meant. If I asked an elephant to &quot;fly&quot; or indeed a pig, if I was being cliche. </p>
+<p>In Ruby, we call this idea &quot;<strong>sending an object a message</strong>&quot; or &quot;<strong>calling a method on an object</strong>&quot;.</p>
+<h4 id="talking-to-objects">Talking to objects</h4>
+<p>So, as a Rubyist, one of your main jobs will be creating objects and then giving them abilities and asking them to perform actions. </p>
+<p>Ruby is an Object Orientated language, we will cover this more in a dedicated OOP lesson, but we&apos;re starting to tackle some of the ideas now.</p>
+<p><br></p>
+<h2 id="we-do-sending-a-message">We Do: Sending a message</h2>
+<p>Open up irb.</p>
+<pre><code>$ irb
+</code></pre><p>Remember, when we were looking at arrays and hashes. Well, just like a rabbit knows how to &apos;hop&apos; and a mouse knows how to &apos;squeak&apos;, different data-types (also objects) in Ruby know how to do different things.</p>
+<p>We can check this by using the method, <code>.methods</code></p>
+<pre><code>&quot;&quot;.methods
+=&gt; [:&lt;=&gt;, :==, :===, :eql?, :hash, :casecmp, :+, :*, :%, :[], :[]=, :insert, :length, :size, :bytesize, :empty?, :=~, :match, :succ, :succ!, :next, :next!, :upto, :index, :rindex, :replace, :clear, :chr, :getbyte, :setbyte, :byteslice, :scrub, :scrub!, :freeze, :to_i, :to_f, :to_s, :to_str, :inspect, :dump, :upcase, :downcase, :capitalize, :swapcase, :upcase!, :downcase!, :capitalize!, :swapcase!, :hex, :oct, :split, :lines, :bytes, :chars, :codepoints, :reverse, :reverse!, :concat, :&lt;&lt;, :prepend, :crypt, :intern, :to_sym, :ord, :include?, :start_with?, :end_with?, :scan, :ljust, :rjust, :center, :sub, :gsub, :chop, :chomp, :strip, :lstrip, :rstrip, :sub!, :gsub!, :chop!, :chomp!, :strip!, :lstrip!, :rstrip!, :tr, :tr_s, :delete, :squeeze, :count, :tr!, :tr_s!, :delete!, :squeeze!, :each_line, :each_byte, :each_char, :each_codepoint, :sum, :slice, :slice!, :partition, :rpartition, :encoding, :force_encoding, :b, :valid_encoding?, :ascii_only?, :unpack, :encode, :encode!, :to_r, :to_c, :&gt;, :&gt;=, :&lt;, :&lt;=, :between?, :nil?, :!~, :class, :singleton_class, :clone, :dup, :taint, :tainted?, :untaint, :untrust, :untrusted?, :trust, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?, :extend, :display, :method, :public_method, :singleton_method, :define_singleton_method, :object_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
+</code></pre><p>This is a list of all the methods that a string can do. </p>
+<p>What have we done here?</p>
+<h4 id="draw-on-board">Draw on board:</h4>
+<pre><code>obj.methods
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Explanation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obj</code></td>
+<td>This part is the object, the object we are sending the message to. (The receiver).</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>This is called the &apos;Dot Operator&apos;. It allows us to send a message to the object.</td>
+</tr>
+<tr>
+<td><code>methods</code></td>
+<td>This is the method name. </td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="we-do-common-string-methods">We Do: Common string methods</h2>
+<p>So, with this in mind, let&apos;s think about a few common things that strings might need to do:</p>
+<pre><code>$ irb
+
+&quot;hello&quot;.length
+=&gt; 5
+
+&quot;hello&quot;.reverse
+=&gt; &quot;olleh&quot;
+
+&quot;hello&quot;.chars
+=&gt; [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]
+
+&quot;hello&quot;.capitalize
+=&gt; &quot;Hello&quot;
+</code></pre><p>As you can see, some of the common things that you would want a string to be able to do has been built into the string class of Ruby.</p>
+<p>How useful is that?!</p>
+<p><br></p>
+<h2 id="i-do-methods-that-take-arguments">I Do: Methods that take arguments</h2>
+<p>Methods in Ruby can also take arguments:</p>
+<pre><code>&quot;hello&quot;.index(&quot;e&quot;)
+=&gt; 1
+
+&quot;hello&quot;.is_a?(String)
+=&gt; true
+</code></pre><p>We will look at this in a bit more depth when we write our own methods.</p>
+<p><br></p>
+<h2 id="i-do-methods-always-return-something">I Do: Methods always return something</h2>
+<p>When you send a message to an object in Ruby, something ALWAYS gets returned. </p>
+<p>You can think of Ruby as being very polite. It will never ignore you.</p>
+<p><br></p>
+<h2 id="we-do-syntactic-sugar">We Do: Syntactic Sugar</h2>
+<p>Okay, what about this one:</p>
+<pre><code>&quot;hello&quot; + &quot;goodbye&quot;
+=&gt; &quot;hellogoodbye&quot;
+</code></pre><p>What on earth just happened here?</p>
+<p>We said that when Ruby was being created and developed, Matz wanted to make programmers happy...</p>
+<p>So we could re-write this methods to look like this:</p>
+<pre><code>&quot;hello&quot;.+(&quot;goodbye&quot;)
+=&gt; &quot;hellogoodbye&quot;
+</code></pre><p>Where the <code>+</code> is the method name.</p>
+<p>However, because this is a hassle, Ruby let&apos;s you write it in a simpler way. This happens quite a lot in Ruby. You almost never have to think about it. But it is really important to understand.</p>
+<h4 id="brackets-or-no-brackets">Brackets or no brackets</h4>
+<p>Another example of syntactic sugar in Ruby is the fact that when a methods doesn&apos;t need an arguement for it to work, you don&apos;t have to add the brackets.</p>
+<p>However, this is still valid Ruby:</p>
+<pre><code>&quot;hello&quot;.length()
+=&gt; 5
+</code></pre><p><br></p>
+<h2 id="we-do-chaining-methods">We Do: Chaining methods</h2>
+<p>Let&apos;s make that long list of string methods slightly easier to read by sorting them.</p>
+<pre><code>&quot;&quot;.methods.sort
+=&gt; [:!, :!=, :!~, :%, :*, :+, :&lt;, :&lt;&lt;, :&lt;=, :&lt;=&gt;, :==, :===, :=~, :&gt;, :&gt;=, :[], :[]=, :__id__, :__send__, :ascii_only?, :b, :between?, :bytes, :bytesize, :byteslice, :capitalize, :capitalize!, :casecmp, :center, :chars, :chomp, :chomp!, :chop, :chop!, :chr, :class, :clear, :clone, :codepoints, :concat, :count, :crypt, :define_singleton_method, :delete, :delete!, :display, :downcase, :downcase!, :dump, :dup, :each_byte, :each_char, :each_codepoint, :each_line, :empty?, :encode, :encode!, :encoding, :end_with?, :enum_for, :eql?, :equal?, :extend, :force_encoding, :freeze, :frozen?, :getbyte, :gsub, :gsub!, :hash, :hex, :include?, :index, :insert, :inspect, :instance_eval, :instance_exec, :instance_of?, :instance_variable_defined?, :instance_variable_get, :instance_variable_set, :instance_variables, :intern, :is_a?, :kind_of?, :length, :lines, :ljust, :lstrip, :lstrip!, :match, :method, :methods, :next, :next!, :nil?, :object_id, :oct, :ord, :partition, :prepend, :private_methods, :protected_methods, :public_method, :public_methods, :public_send, :remove_instance_variable, :replace, :respond_to?, :reverse, :reverse!, :rindex, :rjust, :rpartition, :rstrip, :rstrip!, :scan, :scrub, :scrub!, :send, :setbyte, :singleton_class, :singleton_method, :singleton_methods, :size, :slice, :slice!, :split, :squeeze, :squeeze!, :start_with?, :strip, :strip!, :sub, :sub!, :succ, :succ!, :sum, :swapcase, :swapcase!, :taint, :tainted?, :tap, :to_c, :to_enum, :to_f, :to_i, :to_r, :to_s, :to_str, :to_sym, :tr, :tr!, :tr_s, :tr_s!, :trust, :unpack, :untaint, :untrust, :untrusted?, :upcase, :upcase!, :upto, :valid_encoding?]
+</code></pre><p>We have seemingly called a method on a method, this is called &apos;chaining methods&apos;.</p>
+<p>However, let&apos;s think about this in a bit more detail:</p>
+<pre><code>&quot;&quot;.methods
+</code></pre><p>What is returned from this? </p>
+<ul>
+<li>An array</li>
+</ul>
+<p>So, if we do:</p>
+<pre><code>&quot;&quot;.methods.class
+=&gt; Array
+</code></pre><p>Which means what we are doing is actually using an array method on what was returned from <code>&quot;&quot;.methods</code>.</p>
+<p>Is <code>.sort</code> actually included in <code>&quot;&quot;.methods</code>. Nope!</p>
+<p>So, in Ruby you always have to think, &quot;What object am I calling this method on?&quot; Or, &quot;What object am I sending this message?&quot;</p>
+<h4 id="assess">Assess</h4>
+<pre><code>&quot;hello&quot;.length.class.to_s.length
+</code></pre><p><br></p>
+<h2 id="we-do-array-methods">We Do: Array methods</h2>
+<p>So, we have looked at a few string methods. Let&apos;s have a little look at some array methods.</p>
+<p>Sanity check:</p>
+<pre><code>$ irb
+
+[].methods.sort
+=&gt; [:!, :!=, :!~, :&amp;, :*, :+, :-, :&lt;&lt;, :&lt;=&gt;, :==, :===, :=~, :[], :[]=, :__id__, :__send__, :all?, :any?, :assoc, :at, :bsearch, :chunk, :class, :clear, :clone, :collect, :collect!, :collect_concat, :combination, :compact, :compact!, :concat, :count, :cycle, :define_singleton_method, :delete, :delete_at, :delete_if, :detect, :display, :drop, :drop_while, :dup, :each, :each_cons, :each_entry, :each_index, :each_slice, :each_with_index, :each_with_object, :empty?, :entries, :enum_for, :eql?, :equal?, :extend, :fetch, :fill, :find, :find_all, :find_index, :first, :flat_map, :flatten, :flatten!, :freeze, :frozen?, :grep, :group_by, :hash, :include?, :index, :inject, :insert, :inspect, :instance_eval, :instance_exec, :instance_of?, :instance_variable_defined?, :instance_variable_get, :instance_variable_set, :instance_variables, :is_a?, :join, :keep_if, :kind_of?, :last, :lazy, :length, :map, :map!, :max, :max_by, :member?, :method, :methods, :min, :min_by, :minmax, :minmax_by, :nil?, :none?, :object_id, :one?, :pack, :partition, :permutation, :pop, :private_methods, :product, :protected_methods, :public_method, :public_methods, :public_send, :push, :rassoc, :reduce, :reject, :reject!, :remove_instance_variable, :repeated_combination, :repeated_permutation, :replace, :respond_to?, :reverse, :reverse!, :reverse_each, :rindex, :rotate, :rotate!, :sample, :select, :select!, :send, :shift, :shuffle, :shuffle!, :singleton_class, :singleton_method, :singleton_methods, :size, :slice, :slice!, :slice_before, :sort, :sort!, :sort_by, :sort_by!, :taint, :tainted?, :take, :take_while, :tap, :to_a, :to_ary, :to_enum, :to_h, :to_s, :transpose, :trust, :uniq, :uniq!, :unshift, :untaint, :untrust, :untrusted?, :values_at, :zip, :|]
+</code></pre><p>So let&apos;s have alook at some of the common array methods:</p>
+<pre><code>$ irb
+
+a = [1,2,3,4]
+=&gt; [1, 2, 3, 4]
+
+a.size
+=&gt; 4
+
+a.length
+=&gt; 4
+
+a.first
+=&gt; 1
+
+a.last
+=&gt; 4
+
+a.max
+=&gt; 4
+
+a.min
+=&gt; 1
+</code></pre><h4 id="push-shift">Push / Shift</h4>
+<p>To add an element to the end of an array, you use <code>push</code></p>
+<pre><code># a is still = [1,2,3,4]
+
+a.push(5)
+=&gt; [1, 2, 3, 4, 5]
+</code></pre><h4 id="more-syntactic-sugar">More syntactic sugar</h4>
+<p>Do you remember fetching and setting items from an array:</p>
+<pre><code>a[1]
+=&gt; 2
+
+a.[](1)
+=&gt; 2
+</code></pre><p>Or even more complicated:</p>
+<pre><code>a[0] = &quot;a&quot;
+=&gt; &quot;a&quot;
+
+# Is the same as: 
+
+a.[]=(0, &quot;a&quot;)
+=&gt; &quot;a&quot;
+</code></pre><p>Where <code>0</code> is the index you want to set and <code>&quot;a&quot;</code> is the value </p>
+<pre><code>a
+=&gt; [&quot;a&quot;, 2, 3, 4]
+</code></pre><h4 id="">&lt;&lt;</h4>
+<p>You can also use the <code>&lt;&lt;</code> syntax for <code>push</code></p>
+<pre><code>a &lt;&lt; 6
+=&gt; [1, 2, 3, 4, 5, 6]
+
+# Which is the same as:
+
+a.&lt;&lt;(7)
+=&gt; [1, 2, 3, 4, 5, 6, 7]
+</code></pre><p><br></p>
+<h2 id="we-do-predicate-methods">We do: Predicate methods (?)</h2>
+<p>Ruby is slightly different than a few other languages, methods names can contain special characters.</p>
+<h4 id="convention-for-method-names">Convention for method names</h4>
+<p>Method names should be in: </p>
+<ul>
+<li>lower_snake_case</li>
+<li>start with a letter or undersocre</li>
+<li>can contain some special characters ?, !, [], =</li>
+</ul>
+<p>More Ruby conventions can be found on the <a href="https://github.com/bbatsov/ruby-style-guide" target="_blank">Ruby Style Guide</a>.</p>
+<h4 id="">?</h4>
+<p>Ruby has a convention for method names that return a boolean.</p>
+<pre><code># a still = [1, 2, 3, 4, 5, 6, 7]
+
+a.any?
+=&gt; true
+
+a.include?(&quot;a&quot;)
+=&gt; false
+</code></pre><p>You don&apos;t <strong>have</strong> to name methods using this convention but think, if you expect the method to return a <code>true</code> or a <code>false</code> then add ? to the method name?</p>
+<p>It reads like english!</p>
+<p><br></p>
+<h2 id="we-do-bang-methods">We do: Bang methods (!)</h2>
+<p>Another convention that Ruby has for naming methods is for bang methods, or dangerous methods where it uses an exclamation point (!):</p>
+<p>Lets create another array</p>
+<pre><code>array = [[1,2,3,4],[4,5,6,7],[7,8,9,10]]
+=&gt; [[1,2,3,4],[4,5,6,7],[7,8,9,10]]
+</code></pre><p>If we wanted to merge these three arrays into one array, we can use the method <code>flatten</code></p>
+<pre><code>array.flatten
+=&gt; [1, 2, 3, 4, 4, 5, 6, 7, 7, 8, 9, 10]
+</code></pre><p>However, if we check the value of the variable <code>array</code></p>
+<pre><code>array
+=&gt; [[1, 2, 3, 4], [4, 5, 6, 7], [7, 8, 9, 10]]
+</code></pre><p>If we want to run a method and change the value of the object we ran the method on...</p>
+<pre><code>array.flatten!
+=&gt; [1, 2, 3, 4, 4, 5, 6, 7, 7, 8, 9, 10]
+
+array
+=&gt; [1, 2, 3, 4, 4, 5, 6, 7, 7, 8, 9, 10]
+</code></pre><p>Another example:</p>
+<pre><code>array = [nil, 1, nil, 3, 1, nil]
+array.compact
+=&gt; [1, 3, 1]
+
+array
+=&gt; [nil, 1, nil, 3, 1, nil]
+
+array.compact!
+=&gt; [1, 3, 1]
+
+array
+=&gt; [1, 3, 1]
+</code></pre><p>Not all methods have bang versions.</p>
+<p><br></p>
+<h2 id="we-do-hash-methods">We Do: Hash methods</h2>
+<p>Hash methods are very similar to array methods.</p>
+<p>A couple of interesting ones are:</p>
+<pre><code>hash = {alex: &quot;27&quot;, gerry: &quot;27&quot;}
+=&gt; {:alex=&gt;&quot;27&quot;, :gerry=&gt;&quot;27&quot;}
+
+hash.keys
+=&gt; [:alex, :gerry]
+
+hash.values
+=&gt; [&quot;27&quot;, &quot;27&quot;]
+</code></pre><p>You can look up more methods by doing:</p>
+<pre><code>{}.methods.sort
+=&gt; [:!, :!=, :!~, :&lt;=&gt;, :==, :===, :=~, :[], :[]=, :__id__, :__send__, :all?, :any?, :assoc, :chunk, :class, :clear, :clone, :collect, :collect_concat, :compare_by_identity, :compare_by_identity?, :count, :cycle, :default, :default=, :default_proc, :default_proc=, :define_singleton_method, :delete, :delete_if, :detect, :display, :drop, :drop_while, :dup, :each, :each_cons, :each_entry, :each_key, :each_pair, :each_slice, :each_value, :each_with_index, :each_with_object, :empty?, :entries, :enum_for, :eql?, :equal?, :extend, :fetch, :find, :find_all, :find_index, :first, :flat_map, :flatten, :freeze, :frozen?, :grep, :group_by, :has_key?, :has_value?, :hash, :include?, :index, :inject, :inspect, :instance_eval, :instance_exec, :instance_of?, :instance_variable_defined?, :instance_variable_get, :instance_variable_set, :instance_variables, :invert, :is_a?, :keep_if, :key, :key?, :keys, :kind_of?, :lazy, :length, :map, :max, :max_by, :member?, :merge, :merge!, :method, :methods, :min, :min_by, :minmax, :minmax_by, :nil?, :none?, :object_id, :one?, :partition, :private_methods, :protected_methods, :public_method, :public_methods, :public_send, :rassoc, :reduce, :rehash, :reject, :reject!, :remove_instance_variable, :replace, :respond_to?, :reverse_each, :select, :select!, :send, :shift, :singleton_class, :singleton_method, :singleton_methods, :size, :slice_before, :sort, :sort_by, :store, :taint, :tainted?, :take, :take_while, :tap, :to_a, :to_enum, :to_h, :to_hash, :to_s, :trust, :untaint, :untrust, :untrusted?, :update, :value?, :values, :values_at, :zip]
+</code></pre><p>And looking on <a href="http://ruby-doc.org//core-2.2.0/Hash.html" target="_blank">hash docs</a>.</p>
+<p><br></p>
+<h2 id="we-do-what-is-a-code-block">We Do: What is a code block?</h2>
+<p>Ruby has another tool that allows you to run a chunk of code, called a code block. A block is sort of a method without a name.</p>
+<pre><code>$ irb
+
+10.times { puts &quot;hello&quot; }
+</code></pre><p>There are two ways of using a block in Ruby, using <code>do/end</code> and the <code>{}</code> syntax.</p>
+<pre><code>$ subl 
+
+10.times { puts &quot;hello&quot; }
+
+10.times do 
+  puts &quot;hello&quot;
+end
+</code></pre><p>Usually we use <code>do/end</code> for multi-line block and <code>{}</code> for one-liners.</p>
+<h4 id="passing-object-into-code-block">Passing object into code block</h4>
+<p>We use the <code>|</code> pipe characters to pass an object into the code block.</p>
+<pre><code>10.times do |n|
+  puts &quot;The number is #{n}.&quot;
+end
+</code></pre><p>Code blocks are perhaps one of the coolest features of Ruby!</p>
+<p><br></p>
+<h2 id="closure">Closure</h2>
+<p>Every method call in Ruby has the following syntax:</p>
+<ul>
+<li><strong>A receiver object</strong> or <strong>variable</strong> (defaults to <code>self</code> if absent)</li>
+<li><strong>A dot</strong> (required if there is an explicit reciever)</li>
+<li><strong>A method name</strong> (requrired)</li>
+<li><strong>An argument list</strong> (optional)</li>
+<li><strong>A code block</strong> (optional)</li>
+</ul>
+<p>It&apos;s really important to remember that everything is an object in Ruby. That every object is an example of or an instance of a particular class.</p>
+<p>We ask those objects to do things by sending them messages, (calling methods on them).</p>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d4_arrays_hashes_symbols.html" class="navigation navigation-prev " aria-label="Previous page: Arrays, Hashes and Symbols"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d4_custom_methods.html" class="navigation navigation-next " aria-label="Next page: Custom Methods"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

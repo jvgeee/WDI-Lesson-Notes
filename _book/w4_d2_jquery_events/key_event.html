@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <style>
+      #mouseHover{width: 500px;height:500px;background-color: red}
+    </style>
+    <script src="./jquery.js"></script>
+
+    <script>
+
+      $(function(){
+
+        $("#key_event").keypress(function(e){
+          console.log("window: w: "+ e.which);
+        });
+
+        $("#key_event").keydown(function(e){
+          console.log("keydown !");
+        });
+
+        $("#key_event").keyup(function(e){
+          console.log("keyup !");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input id="key_event">
+  </body>
+</html>

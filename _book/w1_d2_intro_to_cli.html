@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Intro to CLI | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d2_git_and_github.html" />
+    
+    
+    <link rel="prev" href="./w1_d3_rtfm_finding_things_out.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="3" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="intro-to-cli">Intro to CLI</h1>
+<h2 id="opening">Opening</h2>
+<blockquote>
+<p><cite>&quot;In the beginning was... the command prompt&quot;</cite>
+<br></p>
+</blockquote>
+<p><img src="unix_chart.jpg" alt="image"></p>
+<h4 id="what-is-a-gui-pronounced-gooey">What is a GUI (pronounced gooey)?</h4>
+<p>GUI stands for: </p>
+<ul>
+<li><strong>G</strong>raphical </li>
+<li><strong>U</strong>ser </li>
+<li><strong>I</strong>nterface</li>
+</ul>
+<p>Before we had a Graphical User interface (GUI) all we had on a computer was displayed using a the CLI.</p>
+<p>CLI stands for:</p>
+<ul>
+<li><strong>C</strong>ommand </li>
+<li><strong>L</strong>ine </li>
+<li><strong>I</strong>nterface</li>
+</ul>
+<p>We going to develop a lot in the command line, we will use it every day on this course. It will greatly speed up our development process and it will make us feel like hackers!</p>
+<h4 id="what-is-the-shell">What is the shell?</h4>
+<p>The shell is a user interface for access to an operating system&apos;s services. It is just a program that accepts commands as text input and converts them to appropriate operating system functions. </p>
+<p>It is the doorway into our computer&apos;s underbelly...</p>
+<ul>
+<li>Reference to Matrix</li>
+<li><a href="http://hackertyper.com/" target="_blank">Type like a hacker</a></li>
+</ul>
+<h4 id="z-shell">Z Shell</h4>
+<p>WDI London uses Z Shell, (ZSH) which is a shell designed for interactive use.</p>
+<p><br></p>
+<h2 id="we-do-opening-closing-the-command-prompt">We Do:  Opening &amp; Closing the Command Prompt</h2>
+<h4 id="opening-terminal">Opening terminal</h4>
+<p>First, we need to launch the command prompt. We do this by using spotlight: </p>
+<pre><code>cmd+space + &quot;terminal&quot;
+</code></pre><p>and typing <code>terminal</code> followed by <code>enter</code>.</p>
+<h4 id="where-is-this-program">Where is this program?</h4>
+<p>The program is located in </p>
+<pre><code>/Applications/Utilities/Terminal.app
+</code></pre><h4 id="closing-terminal">Closing terminal</h4>
+<p>(Open two tabs)</p>
+<p>To exit the command prompt, you can use <code>exit</code> or <code>cmd+d</code>.</p>
+<p>You can also quit and force quit the application. </p>
+<p>You might not need to completely shut down the console but you might want to terminate a running process because it might be in a loop.</p>
+<p><br></p>
+<h2 id="i-do-navigating-through-the-command-prompt">I Do: Navigating through the command prompt</h2>
+<pre><code>cd ~/
+</code></pre><p>We&apos;re &quot;looking into&quot; the User directory at this point...</p>
+<p>Use the <strong>TAB</strong> and <strong>arrow keys</strong> in the command line to increase your speed while navigating the command line.</p>
+<pre><code>cd + tab + arrow keys
+</code></pre><p>If you don&apos;t press enter, just press delete to remove characters...</p>
+<p>Pressing <strong>UP</strong> will also get the last command written.</p>
+<p><br></p>
+<h2 id="we-do-common-unix-commands">We Do: Common Unix commands</h2>
+<pre><code>cd &lt;directory name&gt;
+</code></pre><p>cd means Change Directory.  This will move us into our specified directory. We can normally leave out cd in zsh.</p>
+<pre><code>cd
+</code></pre><p>Without a specified directory this will take us to our home directory, the same as <code>cd ~</code></p>
+<p><strong>Using zsh you don&apos;t need to use cd. It is a good habit to get into though.</strong></p>
+<pre><code>~
+</code></pre><p>The tilda character will take you back to your User directory. </p>
+<p>You will need a cd for navigating using one dot. </p>
+<pre><code>.
+
+# Will need to do cd .
+</code></pre><p>Is a pointer to the current directory, however using zsh you can&apos;t do just <code>.</code> or you will get an error <code>.: not enough arguments</code></p>
+<pre><code>..
+</code></pre><p>Is a pointer to the parent directory</p>
+<pre><code>pwd
+</code></pre><p>Present working directory</p>
+<pre><code>ls
+</code></pre><p>List of items in current directory</p>
+<pre><code>ls -a
+</code></pre><p>Will list all items in the current directory including hidden files.</p>
+<pre><code>ls -l
+</code></pre><p>Will give you a long list of item in the current directory including permissions, size and last modified date.</p>
+<pre><code>history
+</code></pre><p>Will list your entire commands history (use <code>!line_number</code> to retrieve a specific command)</p>
+<pre><code>grep
+
+# history | grep &lt;search item&gt;
+
+history | grep cd
+</code></pre><p>Global regular expression parser - can be used with history to search. </p>
+<p><strong>Navigate to Desktop</strong></p>
+<pre><code>mkdir &lt;directory name&gt;
+</code></pre><p>Will create the specified directory.</p>
+<pre><code>df -h
+</code></pre><p>Display free disk space</p>
+<pre><code>mkdir &lt;nameofdirectory&gt;
+</code></pre><p>Makes a new directory.</p>
+<pre><code>cd &lt;nameofdirectory&gt;
+touch &lt;filename&gt;
+</code></pre><p>Will create the specified file.</p>
+<pre><code>mv &lt;filename&gt; &lt;filename2&gt;
+</code></pre><p>Is used for both moving files and renaming them.</p>
+<pre><code>cp &lt;file to be copied&gt; &lt;name to copy it to&gt;
+</code></pre><p>Will copy first file to the name of the second file if specified</p>
+<h4 id="careful-here">Careful here...</h4>
+<p>and renaming them, e.g</p>
+<pre><code>rm &lt;filename&gt;
+</code></pre><p>Removes the specified file</p>
+<pre><code>rm -rf &lt;directory name&gt;
+</code></pre><p>Removes the specified directory (Use with caution, make sure you are in the right place. &quot;-rf&quot; stands for recursive forced, and you can imagine how bad the results could be if you did that in your home folder!)</p>
+<p><br></p>
+<h2 id="we-do">We Do:</h2>
+<h4 id="directions-to-students">Directions to students:</h4>
+<p>Navigate to the desktop.</p>
+<pre><code>mkdir films
+</code></pre><p>to make a directory</p>
+<pre><code>cd films
+</code></pre><p>to go into that directory</p>
+<pre><code>ls
+</code></pre><p>to see where you are (directory is empty, nothing there)</p>
+<pre><code>touch casablanca
+</code></pre><p>to make a file</p>
+<pre><code>subl casablanca
+</code></pre><p>to open that file in sublime. Add some text and then close Sublime.</p>
+<pre><code>touch jaws titanic twilight
+</code></pre><p>to make more movies!</p>
+<pre><code>mv jaws jaws2
+</code></pre><p>to rename a file</p>
+<pre><code>subl .
+</code></pre><p>to open the whole directory. Edit some files and then close Sublime, make sure everything is saved.</p>
+<pre><code>rm casablanca jaws
+</code></pre><p>to remove a couple movies.</p>
+<h4 id="aliases-in-zsh">Aliases in zsh</h4>
+<p>You can also increase speed by using aliases which need to be added to the &apos;.zshrc&apos; file.</p>
+<pre><code># Add in ~/.zshrc
+</code></pre><p><br></p>
+<h2 id="you-do-keyboard-shortcuts">You Do: Keyboard shortcuts</h2>
+<p>Here are a list of keyboard shortcuts. You don&apos;t have to use them but if you remember them you will spend less time navigating the terminal and more time writing code.</p>
+<p><a href="https://gist.github.com/alexpchin/01caa027b825d5f98871" target="_blank">CLI Shortcuts</a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Keypress</strong></th>
+<th><strong>Action</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + A</td>
+<td>Go to the beginning of the line you are currently typing on</td>
+</tr>
+<tr>
+<td>Ctrl + E</td>
+<td>Go to the end of the line you are currently typing on</td>
+</tr>
+<tr>
+<td>Ctrl + L</td>
+<td>Clears the Screen, similar to the clear command</td>
+</tr>
+<tr>
+<td>Ctrl + U</td>
+<td>Clears the line before the cursor position. If you are at the end of the line, clears the entire line.</td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>Same as backspace</td>
+</tr>
+<tr>
+<td>Ctrl + R</td>
+<td>Let&#x2019;s you search through previously used commands</td>
+</tr>
+<tr>
+<td>Ctrl + C</td>
+<td>Kill whatever you are running</td>
+</tr>
+<tr>
+<td>Ctrl + D</td>
+<td>Exit the current shell</td>
+</tr>
+<tr>
+<td>Ctrl + Z</td>
+<td>Puts whatever you are running into a suspended background process. fg restores it.</td>
+</tr>
+<tr>
+<td>Ctrl + W</td>
+<td>Delete the word before the cursor</td>
+</tr>
+<tr>
+<td>Ctrl + K</td>
+<td>Clear the line after the cursor</td>
+</tr>
+<tr>
+<td>Ctrl + T</td>
+<td>Swap the last two characters before the cursor</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>Auto-complete files and folder names</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d3_rtfm_finding_things_out.html" class="navigation navigation-prev " aria-label="Previous page: Working Things Out, or: Read The F&#39;n Manual!"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d2_git_and_github.html" class="navigation navigation-next " aria-label="Next page: Git and Github"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

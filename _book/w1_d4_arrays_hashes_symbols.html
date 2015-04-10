@@ -1,0 +1,821 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Arrays, Hashes and Symbols | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d4_methods_and_blocks.html" />
+    
+    
+    <link rel="prev" href="./w1_d2_control_flow_ruby.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.2" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="symbols-arrays-and-hashes">Symbols, arrays and hashes</h1>
+<h2 id="opening-review-of-data-types">Opening: Review of data types</h2>
+<p>We&apos;ve already seen a few basic data types. </p>
+<p>Can you remember them?</p>
+<ul>
+<li>Integers</li>
+<li>Floats</li>
+<li>Strings</li>
+<li>Booleans</li>
+</ul>
+<p>However, you might not only want to deal with one object at a time. Sometimes, you want to deal with a collection of objects.</p>
+<p><br></p>
+<h2 id="i-do-what-is-a-symbol">I Do: What is a symbol?</h2>
+<p>Before that, another data type that you will see in Ruby is a symbol which is a bit like a string. They are often used as names of things.</p>
+<p>You define them using a colon:</p>
+<pre><code>$ irb
+
+a = :hello
+</code></pre><p>Or using the colon-string syntax (which is not as common).</p>
+<pre><code>b = :&quot;hello&quot;
+</code></pre><p>However, in Ruby, a string is mutable, whereas a symbol is immutable. </p>
+<pre><code>&quot;string&quot; &lt;&lt; &quot;another&quot;
+=&gt; &quot;stringanother&quot;
+
+:string &lt;&lt; &quot;another&quot;
+NoMethodError: undefined method `&lt;&lt;&apos; for :string:Symbol
+</code></pre><p>That means that only one copy of a symbol needs to be created. Thus, if you have:</p>
+<pre><code>$ irb
+
+x = :my_str
+=&gt; :my_str
+
+y = :my_str
+=&gt; :my_str
+
+x.object_id
+=&gt; 538728
+
+y.object_id
+=&gt; 538728
+</code></pre><p><code>:my_str</code> will only be created once, and <code>x</code> and <code>y</code> point to the same area of memory. On the other hand, if you have</p>
+<pre><code>x = &quot;my_str&quot;
+=&gt; &quot;my_str&quot;
+
+y = &quot;my_str&quot;
+=&gt; &quot;my_str&quot;
+
+x.object_id
+=&gt; 70182925514500
+
+y.object_id
+=&gt; 70182925532900
+</code></pre><p>A string containing <code>my_str</code> will be created twice, and <code>x</code> and <code>y</code> will point to different instances.</p>
+<p>This means that code that uses symbols often acts a bit faster.</p>
+<p><br></p>
+<h2 id="i-do-what-is-an-array">I Do: What is an array?</h2>
+<p>Let&apos;s look at another data type, an array (a composite data type).</p>
+<ul>
+<li>An array is an <strong>ordered collection of objects</strong>. </li>
+<li>But an array is also an object in Ruby</li>
+</ul>
+<p>(Everything in Ruby is an object).</p>
+<p>If you want to read more about arrays, here is a link to the <a href="http://ruby-doc.org//core-2.2.0/Array.html" target="_blank">docs</a>... RTFM.</p>
+<h4 id="what-are-arrays-useful-for">What are arrays useful for?</h4>
+<p>When writing programs, you will often deal with lots off pieces of information (from APIs or databases), so you need ways of organising and manipulating that data.</p>
+<p><br></p>
+<h2 id="we-do-creating-arrays">We Do: Creating arrays</h2>
+<h4 id="write-on-the-board">Write on the board:</h4>
+<p>You can create an array using one of 4 methods:</p>
+<ul>
+<li>With the literal array constructor <code>[]</code> (square brackets)</li>
+<li>With the array literal notation <code>%w{...}</code>, <code>%w()</code>, and <code>%i{...}</code></li>
+<li>With the <code>Array.new</code> method</li>
+</ul>
+<p>There is one other very rare method:</p>
+<ul>
+<li>With a top-level method called <code>Array()</code>, Array(string)</li>
+</ul>
+<h3 id="literal-array-constructor">Literal array constructor</h3>
+<p>The most common way of defining an array is the literal array constructor, or square brackets.</p>
+<pre><code>$ irb
+
+[]
+[].class
+=&gt; Array
+</code></pre><p>Inside an array, you can put any Ruby object. They DON&apos;T have to be the same type of object.</p>
+<pre><code>$ irb
+
+array = [1, 2, 3, 4]
+array
+=&gt; [1, 2, 3, 4]
+
+array = [&quot;Ben&quot;, &quot;James&quot;, 2]
+array
+=&gt; [&quot;Ben&quot;, &quot;James&quot;, 2]
+</code></pre><h3 id="string-literal-notation">String literal notation</h3>
+<p>The other common way of defining an array is using string literal notation:</p>
+<pre><code>array = %w(Ben James John)
+=&gt; [&quot;Ben&quot;, &quot;James&quot;, &quot;John&quot;]
+
+# or
+
+array = %w{Ben James John}
+array =&gt; [&quot;Ben&quot;, &quot;James&quot;, &quot;John&quot;]
+</code></pre><p>This syntax was inspired by the Perl programming language.</p>
+<h3 id="array-new">Array.new</h3>
+<p>As an array is an object, each new array is an instance of an Array Class. So we can create it with a special method called <code>.new</code> which instantiates a new instance of the array class:</p>
+<pre><code>Array.new(3)
+=&gt; [nil, nil, nil]
+</code></pre><p>The second argument in <code>Array.new</code> is the object that you want to repeat.</p>
+<pre><code>Array.new(3, &quot;hello&quot;)
+=&gt; [&quot;hello&quot;, &quot;hello&quot;, &quot;hello&quot;]
+</code></pre><p>This is not as common as the previous two.</p>
+<p><a href="Optional">i</a>: Optionally go through this.</p>
+<h3 id="array">Array()</h3>
+<p>The last way of creating an array in Ruby is using the top-level method provided by Kernal, you don&apos;t need to do this often:</p>
+<pre><code>Array()
+</code></pre><p>Basically <code>.to_ary</code> and then <code>.to_a</code> is called on the argument.</p>
+<h3 id="multi-dimensional-arrays">Multi-dimensional arrays</h3>
+<p>As an array can contain any type of object, they can also contain other arrays, like this:</p>
+<pre><code>[[1,2,3,4],[4,5,6,7],[7,8,9,10]]
+=&gt; [[1,2,3,4],[4,5,6,7],[7,8,9,10]]
+</code></pre><p><br></p>
+<h2 id="we-do-getting-and-setting-using-index-values">We Do: Getting and setting using index values</h2>
+<h3 id="getting">Getting</h3>
+<h4 id="draw-on-board">Draw on board</h4>
+<pre><code>array = [&quot;a&quot;, &quot;b&quot;, 3, &quot;chair&quot;, [], &quot;robot&quot;]
+index =   0    1   2     3     4      5
+</code></pre><p>Each object in an array is numbered, this number is called the index.</p>
+<p>Like any large collection of information (like a library), arrays have an index, which means you can easily access any object inside it using it&apos;s index value.</p>
+<p><strong>However, the index starts at 0, not 1.</strong></p>
+<p>To <strong>get</strong> the value of a specific index (remember it starts at 0) we use can use the syntax:</p>
+<h4 id="draw-on-board">Draw on board</h4>
+<pre><code>array[index]
+=&gt; value
+</code></pre><p>I know this is confusing because you are using square brackets to define an array and then square brackets to get an element.</p>
+<pre><code>array = [1,2,3,4,5]
+
+array[0] 
+=&gt; 1
+</code></pre><p>You can lookup in reverse using negative indexes</p>
+<pre><code>array[-1]
+=&gt; 5
+</code></pre><p>You can access a subarray using a start, end index</p>
+<pre><code># The syntax is: array[start, end]
+
+array = [1,2,3,4,5]
+array[1,3]
+=&gt;  [2, 3, 4]
+</code></pre><h3 id="setting">Setting</h3>
+<p>You can also <strong>set a new value</strong> using this syntax</p>
+<pre><code>array[0] = &quot;meh&quot;
+
+array
+=&gt; [&quot;meh&quot;, 2, 3, 4, 5]
+</code></pre><p><br> </p>
+<h2 id="assess">Assess</h2>
+<p>So, remember the multidimensional array... saved using the variable: array</p>
+<pre><code>array
+=&gt; [[1,2,3,4],[4,5,6,7],[7,8,9,10]]
+</code></pre><p>How do we show what object is found at index 1 of the array, which is found at the index 1 in the multi-dimensional array?</p>
+<pre><code>array[1][1]
+=&gt; 5
+</code></pre><p><br></p>
+<h2 id="i-do-what-is-a-hash">I Do: What is a hash?</h2>
+<p>Like an array, a hash is also a collection of objects. A hash consists of key/value pairs, where any key and any value can be any Ruby object. </p>
+<p>Hashes let you perform lookup operations based on keys, a reason why they are sometimes referred to as dictionaries.</p>
+<p>Remember a hash is also an object (everything is an object in Ruby).</p>
+<h4 id="draw-on-board">Draw on board</h4>
+<pre><code>hash { key =&gt; value }
+</code></pre><p><br></p>
+<h2 id="we-do-creating-hashes">We Do: Creating hashes</h2>
+<h4 id="write-on-the-board">Write on the board:</h4>
+<p>You can create a hash using one of 4 methods:</p>
+<ul>
+<li>With the literal constructor, <code>{}</code></li>
+<li>With the <code>Hash.new</code> method</li>
+<li>With the <code>Hash.[]</code> method (a square-bracket method of Hash)</li>
+</ul>
+<p>Rare:</p>
+<ul>
+<li>With the top-level method whose name is <code>Hash</code></li>
+</ul>
+<h3 id="literal-constructor">Literal constructor</h3>
+<p>When you type out a literal hash inside curly braces, you seperate keys from values with the <code>=&gt;</code> operator</p>
+<pre><code>$ irb
+
+h = {}
+=&gt; {}
+
+h.class
+=&gt; Hash
+</code></pre><p>We can also create &quot;Hash Literals&quot;; that is, Hashes that are pre-populated with key-value pairs:</p>
+<pre><code>hash = {:top =&gt; 5, :right =&gt; 6, :bottom =&gt; 10, :left =&gt; 10}
+=&gt; {:top=&gt;5, :right=&gt;6, :bottom=&gt;10, :left=&gt;10}
+</code></pre><p>The <code>=&gt;</code> sign is sometimes referred to as a &apos;hash rocket&apos; or &#x2013; a little uncaring &#x2013; a &apos;fat arrow&apos;, and is used to indicate the association of a key and its value.</p>
+<p>And if all the keys of my Hash are symbols, then I can use this syntax:</p>
+<pre><code>hash = {top: 5, right: 6, bottom: 10, left: 10}
+=&gt; {:top =&gt; 5, :right =&gt; 6, :bottom =&gt; 10, :left =&gt; 10}
+</code></pre><p>You don&apos;t have to use symbols as keys:</p>
+<pre><code>hash = {&quot;a&quot; =&gt; b, b: &quot;c&quot;}
+=&gt; {&quot;a&quot;=&gt;:hello, :b=&gt;&quot;c&quot;}
+</code></pre><h3 id="hash-new">Hash.new</h3>
+<pre><code>Hash.new
+=&gt; {}
+</code></pre><p><code>Hash.new</code> instantiates a new hash. If you give </p>
+<h3 id="hash">Hash.[]</h3>
+<p>You can also define a hash by passing an even number of parameters into the <code>.[]</code> class method of the Hash class:</p>
+<pre><code>Hash[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
+=&gt; {&quot;a&quot;=&gt;&quot;b&quot;, &quot;c&quot;=&gt;&quot;d&quot;}
+</code></pre><p>This is actually syntactic sugar for:</p>
+<pre><code>Hash.[](&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)
+</code></pre><p>This is not very common.</p>
+<h3 id="hash">Hash</h3>
+<p>You can also define a hash using the top-level Kernal method <code>Hash</code>:</p>
+<pre><code>Hash([])
+=&gt; {}
+
+Hash(nil)
+=&gt; {}
+</code></pre><p>You almost never seen this.</p>
+<p><br></p>
+<h2 id="we-do-getting-inserting-and-removing-from-a-hash">We Do: Getting, inserting and removing from a hash</h2>
+<h3 id="getting">Getting</h3>
+<h4 id="draw-on-board">Draw on board</h4>
+<pre><code>hash[key]
+=&gt; value
+</code></pre><p>We can access the values in a hash using the key values.</p>
+<pre><code>h = {a: &quot;hello&quot;, b: &quot;we&quot;, c: &quot;love&quot;, d: &quot;hashes&quot;}
+h[:a]
+=&gt; &quot;hello&quot;
+</code></pre><p>There is also a method called <code>.fetch</code></p>
+<pre><code>h.fetch(:a)
+</code></pre><p>Fetch is different than using <code>[]</code> because if you try to fetch a key that isn&apos;t there, then <code>fetch</code> will raise an array:</p>
+<pre><code>h[:e]
+=&gt; nil
+
+h.fetch(:e)
+KeyError: key not found: :e
+</code></pre><p>If you add a second arguement to fetch, that argument will be returned instead of an exception/</p>
+<pre><code>h.fetch(:e, &quot;unknown value&quot;)
+=&gt; &quot;unknown value&quot;
+</code></pre><h3 id="inserting">Inserting</h3>
+<h4 id="draw-on-board">Draw on board</h4>
+<pre><code>hash[key] = value
+</code></pre><p>You can insert values into a hash:</p>
+<pre><code>$ irb
+
+hash = {}
+hash[:new] = &quot;hi&quot;
+=&gt; &quot;hi&quot;
+
+hash[:second] = &quot;roar&quot;
+=&gt; &quot;roar&quot;
+
+hash
+=&gt; {:new=&gt;&quot;hi&quot;, :second=&gt;&quot;roar&quot;}
+</code></pre><p>And reset values using the same syntax:</p>
+<pre><code>hash[:new] = &quot;bye&quot;
+
+hash
+=&gt; {:new=&gt;&quot;bye&quot;, :second=&gt;&quot;roar&quot;}
+</code></pre><p><br> </p>
+<h2 id="closure">Closure</h2>
+<p>We&apos;ve gone through what a symbol, array and a hash are and how to create them. These really will be some of the most useful tools you have to play with as a coder.</p>
+<p><br> </p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d2_control_flow_ruby.html" class="navigation navigation-prev " aria-label="Previous page: Controlling Flow with Ruby"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d4_methods_and_blocks.html" class="navigation navigation-next " aria-label="Next page: Methods and Blocks"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

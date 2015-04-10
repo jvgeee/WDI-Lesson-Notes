@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <style>
+      #mouseHover{width: 500px;height:500px;background-color: red}
+    </style>
+    <script src="./jquery.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#mouseHover").on("mouseover", function(e){
+          $(this).mousemove(function(e){
+            console.log(e.pageX, e.pageY, (e.pageY/500))
+            $(this).css("opacity", (e.pageY/500))
+          });
+        });
+        $("#mouseHover").on("mouseout", function(e){
+          console.log("you've left the element")
+        });
+
+        $("button").on("mousedown",function(e){
+          console.log("mousedown on button")
+        });
+
+        $("button").on("mouseup",function(e){
+          console.log("mouseup on button")
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <button>click me !</button>
+    <div id="mouseHover"></div>
+  </body>
+</html>

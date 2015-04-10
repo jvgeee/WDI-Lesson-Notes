@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: #7fbd42;
+  overflow: hidden;
+}
+
+header nav {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header nav ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+header nav img {
+  display: inline-block;
+  height: 60px;
+}

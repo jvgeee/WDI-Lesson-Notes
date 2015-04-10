@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+    <style>
+      #mouseHover{width: 500px;height:500px;background-color: red}
+      #scroller{ background-color: black; width: 100%; height: 10000px;}
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          scroll_value = $(window).scrollTop();
+          scroll_value_percentage = scroll_value / $("#scroller").css("height");
+          $("#my_id").css("height", "2px")
+          console.log(scroll_value+ "px");
+          if(scroll_value > 1000){
+            $("#scroller").css("background-color", "red");
+          }
+          if(scroll_value > 2000){
+            $("#scroller").css("background-color", "green");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="scroller"></div>
+  </body>
+</html>

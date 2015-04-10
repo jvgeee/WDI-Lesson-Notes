@@ -1,0 +1,731 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Intro to Databases | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w3_d2_sinatra_active_record.html" />
+    
+    
+    <link rel="prev" href="./w2_d4_sinatra_post.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="7.2" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="intro-to-databases">Intro to databases</h1>
+<h2 id="opening-what-is-a-database">Opening: What is a database?</h2>
+<p>A database is a collection of information that is organized so that it can easily be accessed, managed, and updated. In one view, databases can be classified according to types of content: bibliographic, full-text, numeric, and images.</p>
+<ul>
+<li>Types of databases<ul>
+<li>SQL / NoSQL</li>
+<li>Relational / Document</li>
+<li>Note that a &apos;relation&apos; is a view of data that comes back from a query, not the fact that there are relationships</li>
+</ul>
+</li>
+<li>What do we store in databases</li>
+</ul>
+<ul>
+<li>How do we manipulate data in databases?<ul>
+<li>Create</li>
+<li>Read</li>
+<li>Update</li>
+<li>Delete</li>
+</ul>
+</li>
+</ul>
+<p>PostgreSQL is the world&#x2019;s most advanced open source database. Developed over 25 years by a vibrant and independent open source community, PostgreSQL was born from the same research as Oracle and DB2 and contains comparable enterprise class features such as full ACID compliance for outstanding transaction reliability and Multi-Version Concurrency Control for supporting high concurrent loads.</p>
+<h2 id="we-do-postgresql">We Do: PostgreSQL</h2>
+<pre><code>  which psql
+</code></pre><p>If there are any issues with running <code>psql</code>, ensure that the <code>postgresapp</code> is installed and running (it should have been configured in installfest), and that the path is updated to include it.</p>
+<pre><code>  psql
+  \q  -- to quit
+</code></pre><p>Psql is to postgresql what irb is for ruby.</p>
+<p>Once you are in psql, to see the list of all the psql meta-commands, type</p>
+<pre><code>  \?
+</code></pre><p>if you want to see all the sql commands, type:</p>
+<pre><code>  \h
+</code></pre><h2 id="we-do-how-to-create-a-table-and-read-write-data">We do: How to create a table and read/write data.</h2>
+<p>To work with data in databases we perform the four CRUD operations.
+So we&apos;ll work through the SQL commands that give us that functionality.</p>
+<p>In psql:</p>
+<pre><code>  create database people_app;
+  \l 
+  \c people_app
+  \d
+  create table people (
+    name varchar(255),
+    age int2,
+    sex char(1)
+    );
+  \d
+  \d people
+
+  INSERT INTO PEOPLE (name) VALUES (&apos;bob&apos;);
+
+  SELECT * FROM PEOPLE;
+  INSERT INTO people (age) VALUES (35);
+
+  INSERT INTO people (name, age) VALUES (&apos;jill&apos;, 22);
+  SELECT * FROM PEOPLE;
+
+  INSERT INTO people (sex, name, age) VALUES (&apos;f&apos;, &apos;sue&apos;, 22);
+  SELECT * FROM PEOPLE;
+
+  # error values
+  INSERT INTO people (sex, name, age) VALUES (&apos;f&apos;, &apos;sue&apos;, &apos;fsd&apos;);
+  INSERT INTO people (sex, name, age) VALUES (&apos;ff&apos;, &apos;sue&apos;, 31);
+
+  UPDATE people SET sex = &apos;f&apos; WHERE name = &apos;jill&apos;;
+  SELECT * FROM PEOPLE;
+
+  INSERT INTO people (name, age) VALUES (&apos;jill&apos;, 29);
+  SELECT * FROM PEOPLE;
+
+  UPDATE people SET age = 23 WHERE name = &apos;jill&apos; and age = 22;
+  SELECT * FROM PEOPLE;
+
+  UPDATE people SET name = &apos;sam&apos;, sex = &apos;m&apos; WHERE age = 35;
+  SELECT * FROM PEOPLE;
+
+  # be careful with delete... there&apos;s no undo!
+  DELETE FROM people WHERE name = &apos;bob&apos;;
+  SELECT * FROM PEOPLE;
+</code></pre><p>THis way we cn stor </p>
+<p>What&apos;s an ID column for?</p>
+<pre><code>  CREATE TABLE weathers (
+    id serial8,
+    city varchar(255),
+    low int,
+    high int,
+    high_recorded_on date,
+    low_recorded_on date
+    );
+</code></pre><p>int8 can store up to 18 million trillion</p>
+<p>Now that the table has been created, we can insert data.</p>
+<pre><code>  INSERT INTO weathers (city, low, high, high_recorded_on) VALUES (&apos;London&apos;, -10, 43, &apos;1 Jan 2012&apos;)
+</code></pre><p>Repeat the INSERT a couple of times - see the incrementing index</p>
+<pre><code>  SELECT * FROM weathers;
+</code></pre><h2 id="we-do-link-tables-with-foreign-keys">We do: Link tables with Foreign Keys</h2>
+<p>Let&apos;s create a DB to track students and their courses.</p>
+<ul>
+<li>we need a students table - what columns?</li>
+<li>and a class table - what data?</li>
+<li>how do we link the together to track all the courses a student&apos;s enrolled on?<ul>
+<li>Join table with two foreign keys</li>
+</ul>
+</li>
+</ul>
+<pre><code>  DROP DATABASE people_app;
+
+  CREATE DATABASE campus;
+</code></pre><p>In the terminal</p>
+<pre><code>  mkdir campus
+  cd campus
+  touch campus.sql
+  subl .
+</code></pre><pre><code>  CREATE TABLE students
+  (
+    id serial4 primary key,
+    first varchar(20),
+    last varchar(20),
+    dob date,
+    gpa float4
+  );
+
+  CREATE TABLE classes
+  (
+    id serial4 primary key,
+    name varchar(50) unique not null
+  );
+
+  CREATE TABLE schedules
+  (
+    id serial4 primary key,
+    student_id int4 references students(id),
+    class_id int4 references classes(id)
+  );
+</code></pre><p>The fields in the join-table are generally named according to the convention &quot;table_name_singular_id&quot;.</p>
+<pre><code>  psql -d campus -f campus.sql
+  psql campus
+
+  \d
+
+  INSERT INTO students (first, last, dob, gpa) VALUES (&apos;bill&apos;, &apos;jones&apos;, &apos;1 Jan 1990&apos;, 3.1);
+  INSERT INTO students (first, last, dob, gpa) VALUES (&apos;sally&apos;, &apos;jones&apos;, &apos;1 Jan 1950&apos;, 3.6);
+  INSERT INTO students (first, last, dob, gpa) VALUES (&apos;sue&apos;, &apos;smith&apos;, &apos;1 Jan 2013&apos;, 2.6);
+  SELECT * FROM students;
+
+  INSERT INTO classes (name) VALUES (&apos;Biology&apos;);
+  INSERT INTO classes (name) VALUES (&apos;Chemistry&apos;);
+  INSERT INTO classes (name) VALUES (&apos;Physics&apos;);
+  SELECT * FROM classes;
+
+  INSERT INTO schedules (student_id, class_id) VALUES (2, 3);
+  INSERT INTO schedules (student_id, class_id) VALUES (2, 1);
+  INSERT INTO schedules (student_id, class_id) VALUES (2, 2);
+  SELECT * FROM schedules;
+</code></pre><p>What if we add a student to a class that doesn&apos;t exist:</p>
+<pre><code>  INSERT INTO schedules (student_id, class_id) VALUES (2, 50);
+</code></pre><p>Add some extra students</p>
+<pre><code>  INSERT INTO schedules (student_id, class_id) VALUES (2, 3);
+  INSERT INTO schedules (student_id, class_id) VALUES (2, 1);
+</code></pre><p>How do you find out the names of the students taking Biology (class_id 1)?</p>
+<pre><code>  -- Start by getting just the information for the Biology class.
+  SELECT * FROM schedules WHERE class_id = 1;
+
+  -- We don&#x2019;t really need the class_id, so we can just ask for student_id.
+  SELECT student_id FROM schedules WHERE class_id = 1;
+
+  -- Now we can get the student names from the student_ids. Note that (2,3) is kind of like an array.
+  SELECT first, last FROM students WHERE id IN (2,3);
+</code></pre><h2 id="we-do-joins">We do: Joins</h2>
+<p>We can access some data by linking tables using foreign keys :</p>
+<pre><code>
+SELECT * FROM schedules JOIN classes ON schedules.class_id = classes.id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT * FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT students.* FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT DISTINCT students.id FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT DISTINCT students.id, students.first FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT * FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos;;
+</code></pre><pre><code>SELECT students.* FROM schedules JOIN classes ON schedules.class_id = classes.id JOIN students ON students.id=schedules.student_id WHERE classes.name = &apos;Biology&apos; GROUP BY students.id;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w2_d4_sinatra_post.html" class="navigation navigation-prev " aria-label="Previous page: Sinatra Post"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w3_d2_sinatra_active_record.html" class="navigation navigation-next " aria-label="Next page: Sinatra Active Record"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

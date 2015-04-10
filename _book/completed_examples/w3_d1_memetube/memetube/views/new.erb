@@ -1,0 +1,22 @@
+<form method='post' action='<%= @row.nil? ? "/videos" : "/videos/#{@row['id']}" %>'>
+  <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" value='<%= @row['title'] if @row %>' type='text' name='title' autofocus>
+  </div>
+
+  <div class="form-group">
+    <label>Description</label>
+    <input class="form-control" value='<%= @row['description'] if @row %>' type='text' name='description'>
+  </div>
+
+  <div class="form-group">
+    <label>Video ID</label>
+    <input class="form-control" value='<%= @row['url'] if @row %>' type='text' name='url'>
+  </div>
+
+  <div class="form-group">
+    <label>Genre</label>
+    <input class="form-control" value='<%= @row['genre'] if @row %>' type='text' name='genre'>
+  </div>
+  <button class="btn btn-default"><%= @row.nil? ? "Create Video" : "Edit Video"  %></button>
+</form>

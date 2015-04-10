@@ -1,0 +1,22 @@
+
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#event_click").click(function(){
+          alert(popup = "I've been clicked ! ")
+        })
+        $("#event_dblclick").dblclick(function(){
+          alert("I've been dblclicked ! ")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <button id="event_click">click</button>
+    <button id="event_dblclick">dblclick</button> 
+  </body>
+</html>

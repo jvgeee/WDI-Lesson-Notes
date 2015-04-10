@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Enumerators and Enumerables | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w2_d1_oop_ruby.html" />
+    
+    
+    <link rel="prev" href="./w1_d4_custom_methods.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.5" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="enumerators-and-enumerables">Enumerators and Enumerables</h1>
+<h2 id="enumerables-and-they-work-with-blocks">Enumerables, and they work with blocks</h2>
+<p>We have already touched on blocks, if we&apos;ve seen code like:</p>
+<pre><code>10.times { |i| print i, &quot; &quot; }
+</code></pre><p>A block is a portion of code that is passed to a method - in fact, blocks can be considered little methods of their own, just with no name</p>
+<p>Used very often with &quot;enumerable&quot; objects (Arrays, Hashes) to run the block against each element in the collection.</p>
+<p>For this lesson we will use some of the enumerable methods to demonstrate blocks. You will use these methods <em>all the time</em> in your Ruby programming career, so become very familar with them.</p>
+<ul>
+<li>Demonstrate googling for &quot;ruby api array&quot;, &quot;ruby api enumerable&quot; - reinforce how importand it is to remember to do this, and to read this </li>
+</ul>
+<pre><code>  def print_name(name)
+    print name, &quot; &quot;
+  end
+
+  names = %w(Fred Wilma Barney) 
+
+  for i in 0..names.size
+    print_name(names[i])
+  end
+</code></pre><p>  or...</p>
+<pre><code>  %w(Fred Wilma Barney).each { |name| print_name(name) }
+</code></pre><p>  or ...</p>
+<pre><code>  %w(Fred Wilma Barney).each do |name| 
+    print_name(name)
+  end
+</code></pre><ul>
+<li>We generally use {} for one-line blocks, and &quot;do..end&quot; for multiline blocks</li>
+</ul>
+<p><br></p>
+<h2 id="simple-enumerator-each">Simple enumerator: .each()</h2>
+<p>Blocks are a general-purpose part of the Ruby language, but you most often use them when working with &quot;enumerable&quot; objects, these are objects that contain a collection of things (Arrays and Hashes).</p>
+<p>Enumerators become useful when you work with hashes or arrays and want to list or transform values inside them.</p>
+<p>Array and Hash both include a module called &quot;Enumerable&quot; and thus get a bunch of useful methods, many of which expect a block to be passed. When we cover modules tomorrow, we&apos;ll see how we can add the Enumerable method to our own classes.</p>
+<p>Examples:</p>
+<pre><code class="lang-ruby">arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+arr.each { |num| puts <span class="hljs-string">&quot;the number is <span class="hljs-subst">#{num}</span>&quot;</span> }
+</code></pre>
+<p>The value within the pipes (<code>||</code>) is the current value from the array which is being passed to the block on each iteration. <code>num</code> is a variable, it can be changed to whatever value you like. <code>num</code> is also local only to the block, which means that you cannot access it outside the block.</p>
+<pre><code class="lang-ruby">hash = {<span class="hljs-symbol">foo:</span> <span class="hljs-number">1</span>, <span class="hljs-symbol">bar:</span> <span class="hljs-number">2</span>}
+hash.each { |key, value| puts <span class="hljs-string">&quot;key was <span class="hljs-subst">#{key}</span>, value was <span class="hljs-subst">#{value}</span>&quot;</span> }
+</code></pre>
+<p>We can do anything with the code inside our block. For example we can use an if statement.</p>
+<p>Example:  </p>
+<pre><code class="lang-ruby">arr = []
+(<span class="hljs-number">1</span>..<span class="hljs-number">10</span>).each{ |i| a &lt;&lt; i <span class="hljs-keyword">if</span> i.odd? }
+</code></pre>
+<p>A variation on #each is #each_with_index. We can use this to rank instructors by how much they love ruby:</p>
+<pre><code class="lang-ruby">  <span class="hljs-string">%w[jon gerry tim]</span>.each_with_index <span class="hljs-keyword">do</span> |name, index|
+    puts <span class="hljs-string">&quot;<span class="hljs-subst">#{index}</span> =&gt; <span class="hljs-subst">#{name}</span>&quot;</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p><br></p>
+<h2 id="use-various-enumerators">Use various enumerators</h2>
+<h4 id="map">Map:</h4>
+<p>The <code>.map</code> method invokes the given block once for each element of the block. We use it to transform an array, as it returns a new array of the same size as the original, but with each value substituted with whatever the block returns.</p>
+<p><code>collect</code> is an alias of <code>map</code></p>
+<pre><code>numbers = (1..10).to_a
+numbers_as_strings = numbers.map { |num| num.to_s }
+
+names = [&quot;fred&quot;, &quot;wilma&quot;]
+rev_names = names.map { |n| n.reverse }
+#=&gt; [&quot;derf&quot;, &quot;amliw&quot;]
+</code></pre><h4 id="reduce">Reduce:</h4>
+<p>The <code>.inject</code> (aka <code>.reduce</code>) method combines all the elements of the enumeration by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
+<p>If you specify a block, then for each element in the enumeration the block is passed an accumulator value (memo) and the element. If you specify a symbol instead, then each element in the collection will be passed to the named method of memo. In either case, the result becomes the new value for memo. At the end of the iteration, the final value of memo is the return value for the method.</p>
+<p>If you do not explicitly specify an initial value for memo, then the first element of collection is used as the initial value of memo.</p>
+<p>Examples:</p>
+<pre><code>Sum some numbers:  
+$ (5..10).reduce(:+)
+=&gt; 45
+Same using a block and inject:
+$ (5..10).inject { |sum, n| sum + n }
+=&gt; 45
+
+Multiply some numbers
+$ (5..10).reduce(1, :*)
+=&gt; 151200
+Same using a block:
+  (5..10).inject(1) { |product, n| product * n }
+=&gt; 151200
+
+Find the longest word:
+$ longest = %w{ cat sheep bear }.inject do |memo, word|
+$    memo.length &gt; word.length ? memo : word
+$ end
+$ longest
+=&gt; &quot;sheep&quot;
+</code></pre><h4 id="select">Select:</h4>
+<p>Alternatively we can use <code>.select</code> to return an array of values which equate to true once passed through our block.</p>
+<p>Examples:</p>
+<pre><code>(1..10).select { |i| i.odd? }
+(1..10).find_all { |i| i.even? }  
+
+(1..10).select { |i| i % 3 == 0 }
+#=&gt; [3, 6, 9]
+</code></pre><h4 id="group-by">Group_by:</h4>
+<p>To group our objects, we have a <code>.group_by</code> method:  </p>
+<pre><code>(1..10).group_by { |i| i % 3 == 0}    
+RETURNS   {false: [1,2,4,5,7,8,10], true: [3,6,9]}
+</code></pre><h2 id="enumerables-vs-enumerator">Enumerables vs Enumerator</h2>
+<p>Enumerator objects is that they contain the information about how to iterate through a collection. For example, a #cycle Enumerator knows how to iterate through a collection one or more times, while a #reverse_each Enumerator knows how to iterate through a collection backwards.</p>
+<p>If <code>#cycle</code> is not passed a block, it will return an Enumerator.</p>
+<pre><code>&gt;&gt; cycle_enum = arr.cycle
+=&gt; #&gt;Enumerator: [&quot;first&quot;, &quot;middle&quot;, &quot;last&quot;]:cycle&gt;
+</code></pre><p>Now, Enumerator#next can be used to retrieve the next element as many times as necessary.</p>
+<pre><code>&gt;&gt; cycle_enum.next
+=&gt; &quot;first&quot;
+&gt;&gt; cycle_enum.next
+=&gt; &quot;middle&quot;
+&gt;&gt; cycle_enum.next
+=&gt; &quot;last&quot;
+&gt;&gt; cycle_enum.next
+=&gt; &quot;first&quot;
+</code></pre><p>This works because the Enumerator specifically came from #cycle. Watch what happens when a regular #each Enumerator is used.</p>
+<pre><code>&gt;&gt; each_enum = arr.each
+&gt;&gt; each_enum.next
+=&gt; &quot;first&quot;
+&gt;&gt; each_enum.next
+=&gt; &quot;middle&quot;
+&gt;&gt; each_enum.next
+=&gt; &quot;last&quot;
+&gt;&gt; each_enum.next
+=&gt; StopIteration: iteration reached an end
+</code></pre><p>Note: You can&#x2019;t just use #next on #cycle and #each.</p>
+<pre><code>&gt;&gt; arr.cycle.next
+=&gt; &quot;first&quot;
+&gt;&gt; arr.cycle.next
+=&gt; &quot;first&quot;
+&gt;&gt; arr.cycle.next
+=&gt; &quot;first&quot;
+</code></pre><p>This is because iterator methods return a fresh Enumerator every time.</p>
+<pre><code>&gt;&gt; arr.cycle.object_id == arr.cycle.object_id
+=&gt; false
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d4_custom_methods.html" class="navigation navigation-prev " aria-label="Previous page: Custom Methods"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w2_d1_oop_ruby.html" class="navigation navigation-next " aria-label="Next page: OOP in Ruby"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,845 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Multiple Classes | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w2_d2_intro_to_tdd.html" />
+    
+    
+    <link rel="prev" href="./w2_d1_custom_classes_ruby.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.8" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="multiple-classes">Multiple Classes</h1>
+<h2 id="opening">Opening</h2>
+<p>We&apos;ve played with creating one custom class but we ideally want to make lots of custom classes and get them to interact with each other.</p>
+<h4 id="instructions">Instructions</h4>
+<p>The task is to create a Ruby console app to manage flights and passengers from an airport.</p>
+<p>You must be able to:</p>
+<ul>
+<li>Add a flight</li>
+<li>List flights</li>
+<li>Remove flight</li>
+<li>Add passenger to flight</li>
+<li>List passengers of a flight</li>
+</ul>
+<p><br></p>
+<h2 id="we-do-model-airport-using-custom-classes">We Do: Model airport using custom classes</h2>
+<p>Let&apos;s model the various classes:</p>
+<pre><code>$ mkdir airport &amp;&amp; airport
+</code></pre><p>We need to define our classes:</p>
+<pre><code>touch airport.rb
+touch flight.rb
+touch passenger.rb
+</code></pre><p><br></p>
+<h3 id="the-airport-class">The Airport Class</h3>
+<p>An airport needs to have:</p>
+<ul>
+<li>A name</li>
+<li>It needs to contain information about it&apos;s flights</li>
+</ul>
+<p>In the <code>airport.rb</code> file:</p>
+<pre><code>class Airport
+
+  attr_reader :name
+  attr_accessor :flights
+
+  def initialize(name)
+    @name  = name
+    @flights = []
+  end
+
+end
+</code></pre><h4 id="using-an-array-for-flights">Using an array for flights</h4>
+<p>We need a way of storing several objects, so we need a container for objects. So that&apos;s why we&apos;ve used an array.</p>
+<h4 id="using-a-hash">Using a hash?</h4>
+<p>We could use a hash here. However, for the moment let&apos;s keep things simple.</p>
+<p><br></p>
+<h3 id="the-flight-class">The Flight Class</h3>
+<p>A flight needs to contain:</p>
+<ul>
+<li>The number of seats on the flight</li>
+<li>The destination of the flight</li>
+<li>The passengers on that flight</li>
+</ul>
+<p>Add to the <code>flight.rb</code> file:</p>
+<pre><code>class Flight
+
+  attr_reader :number_of_seats
+  attr_accessor :passengers, :destination
+
+  def initialize(number_of_seats, destination)
+    @number_of_seats = number_of_seats
+    @destination     = destination
+    @passengers      = []
+  end
+
+end
+</code></pre><p><br></p>
+<h3 id="the-passenger-class">The Passenger class</h3>
+<p>Each passenger needs:</p>
+<ul>
+<li>A name</li>
+</ul>
+<p>Add this to the <code>passenger.rb</code> file:</p>
+<pre><code>class Passenger
+
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+  end
+
+end
+</code></pre><p><br></p>
+<h2 id="make-a-menu">Make a menu</h2>
+<p>In order to do the things that the brief asks us to do we need another file, a file that will give us an user-interface.</p>
+<pre><code>$ touch main.rb
+</code></pre><h4 id="requiring-files">Requiring files</h4>
+<p>First, we need to <code>require</code> the other files:</p>
+<pre><code>require_relative &apos;airport&apos;
+require_relative &apos;flight&apos;
+require_relative &apos;passenger&apos;
+</code></pre><p>We then need to instantiate a new airport using the Airport class</p>
+<pre><code>airport = Airport.new(&quot;London Heathrow&quot;)
+</code></pre><p>Let&apos;s remember the things that the airport manager wants to do:</p>
+<ul>
+<li>Add a flight</li>
+<li>List flights</li>
+<li>Remove flight</li>
+<li>Add passenger to flight</li>
+<li>List passengers of a flight</li>
+</ul>
+<h4 id="creating-a-menu">Creating a menu</h4>
+<p>In <code>main.rb</code> let&apos;s create a menu method:</p>
+<pre><code>def menu
+  puts `clear`
+  puts &quot;*** Welcome to Heathrow Airport ***\n\n&quot;
+  puts &apos;1 : Add a flight&apos;
+  puts &apos;2 : List flights&apos;
+  puts &apos;3 : Add passenger to flight&apos;
+  puts &apos;4 : List passengers of a flight&apos;
+  puts &quot;Q : Quit\n\n&quot;
+  print &apos;--&gt; &apos;
+    gets.chomp
+end
+</code></pre><p>The last line of the method will be returned, which will be the user&apos;s selection.</p>
+<p>Next, we need to save that interaction so that we can use it:</p>
+<pre><code>response = menu
+</code></pre><h4 id="ask-question">Ask question:</h4>
+<p><strong>Q. What control-flow technique would be useful for this?</strong></p>
+<p>Answer. A case statement or a case statement and a while loop?</p>
+<pre><code>while response.upcase != &apos;Q&apos;
+  case response
+  when &apos;1&apos; # Add a flight
+  when &apos;2&apos; # List flights
+  when &apos;3&apos; # Add passenger to flight
+  when &apos;4&apos; # List passengers of a flight
+  end
+
+  response = menu
+end
+</code></pre><p>Let&apos;s run this with:</p>
+<pre><code>$ ruby main.rb
+</code></pre><p><br></p>
+<p>At the end, we call <code>response = menu</code> again to re-run the menu.</p>
+<h4 id="add-a-flight">Add a flight</h4>
+<p>We need to by asking for user input.  Let&apos;s look back at what we need to create a new flight, <code>number_of_seats</code>, <code>destination</code>:</p>
+<p>We need to use <code>gets</code> and <code>chomp</code> to get this input.</p>
+<pre><code>when &apos;1&apos; # Add a flight
+  puts &quot;How many passengers are on this flight?&quot;
+  number_of_passengers = gets.to_i
+  puts &quot;What is the flight&apos;s destination?&quot;
+  destination = gets.chomp
+</code></pre><p>Why don&apos;t we ask for this information inside the class? Well, you need to know the name before you can create a flight.</p>
+<p>Next, we need to add a flight to the airport array. In order to do this, we need to add a method in our airport class.</p>
+<p>In <code>airport.rb</code>:</p>
+<pre><code>def add_flight(number_of_seats, destination)
+  flights &lt;&lt; Flight.new(number_of_seats, destination)
+end
+</code></pre><h4 id="why-in-the-airport-class-and-not-the-flight-class">Why in the airport class and not the flight class?</h4>
+<p>It&apos;s not the job of the flight to know about the airport. The airport stores the fights so it needs to be the one who adds the flight.</p>
+<p>Let&apos;s now let&apos;s use this instance method in <code>main.rb</code></p>
+<pre><code>when &apos;1&apos; # Add a flight
+  puts &quot;How many passengers are on this flight?&quot;
+  number_of_passengers = gets.chomp.to_i
+  puts &quot;What is the flight&apos;s destination?&quot;
+  destination = gets.chomp            
+  p airport.add_flight(number_of_passengers, destination)
+</code></pre><p>For the last line we have used <code>p</code> instead of <code>puts</code></p>
+<h4 id="problem">Problem?</h4>
+<p>The code runs fine, but nothing is displayed becuase the code runs straight on.</p>
+<p>Let&apos;s add <code>gets</code> to wait for a keypress. Nothing is done with this keypress, it just stops the program running.</p>
+<pre><code>when &apos;1&apos; # Add a flight
+  puts &quot;How many passengers are on this flight?&quot;
+  number_of_passengers = gets.chomp.to_i
+  puts &quot;What is the flight&apos;s destination?&quot;
+  destination = gets.chomp            
+  p airport.add_flight(number_of_passengers, destination)
+  gets
+</code></pre><h4 id="-flight-0x007fb3048316e8">#<Flight:0x007fb3048316e8></Flight:0x007fb3048316e8></h4>
+<p>After the flight is pushed into the flights array, the flights array is returned.</p>
+<p>We can customise the way this looks by overwriting the <code>.to_s</code> method in the Flight class:</p>
+<pre><code>def to_s
+  &quot;#{destination} with #{number_of_seats} passengers.&quot;
+end
+</code></pre><p>Then we can used <code>puts</code> to output the string representation of the Flight object. <code>puts</code> outputs a string.</p>
+<pre><code>when &apos;1&apos; # Add a flight
+  puts &quot;How many passengers are on this flight?&quot;
+  number_of_passengers = gets.chomp.to_i
+  puts &quot;What is the flight&apos;s destination?&quot;
+  destination = gets.chomp            
+  puts airport.add_flight(number_of_passengers, destination)
+  gets
+</code></pre><h4 id="list-flights">List flights</h4>
+<p>Next, we need to create a method to list flights. We can access the flights using the instance method <code>.flights</code> in the Airport class.</p>
+<p>Lets create a method to display the flights in <code>main.rb</code></p>
+<pre><code>def list_flights(airport)
+  airport.flights.each_with_index do |flight, index|
+    puts &quot;#{index}.\t#{flight}&quot;
+  end
+end
+</code></pre><p><code>each_with_index</code> will allow us to access the index of the flights:</p>
+<p><strong>Q. Why are we not doing this in the airport class?</strong></p>
+<p>Answer: You don&apos;t want to be &quot;puts&apos;ing&quot; out of a class. This suggests that the Airport class knows about the main file. But it doesn&apos;t. We take the data out of the airport class and then display it in <code>main.rb</code>.</p>
+<p>Let&apos;s use this in the menu:</p>
+<pre><code>when &apos;2&apos; # List flights
+  puts &quot;Here is a list of the flights:&quot;
+  list_flights(airport)
+  gets
+</code></pre><h4 id="add-passenger-to-flight">Add passenger to flight</h4>
+<p>In order to do this task, we need to do three things.
+So let&apos;s write the pseudo-code:</p>
+<ol>
+<li>Create a new passenger</li>
+<li>Choose a flight</li>
+<li>Add passenger to a flight</li>
+</ol>
+<p>Let&apos;s first create the passenger:</p>
+<pre><code>when &apos;3&apos; # Add passenger to flight
+  puts &quot;What is the passenger name?&quot;
+  name = gets.chomp
+  passenger = Passenger.new(name)
+</code></pre><p>Then let&apos;s list the flights:</p>
+<pre><code>when &apos;3&apos; # Add passenger to flight
+  puts &quot;What is the passenger name?&quot;
+  name = gets.chomp
+  passenger = Passenger.new(name)
+
+  puts &quot;What flight do you want to add a passenger to?&quot;
+  list_flights(airport)
+</code></pre><p>Then choose a flight using <code>[]</code>. We&apos;re just accessing an array!</p>
+<pre><code>flight_number = gets.chomp.to_i
+flight = airport.flights[flight_number]
+</code></pre><p>Next, let&apos;s create a method to add a passenger to a flight:</p>
+<pre><code># flight.rb
+
+def add_passenger(passengers)
+  passengers &lt;&lt; passenger
+end
+</code></pre><p>Let&apos;s use it in the menu.</p>
+<pre><code>when &apos;3&apos; # Add passenger to flight
+  puts &quot;What is the passenger name?&quot;
+  name = gets.chomp
+  passenger = Passenger.new(name)
+
+  puts &quot;What flight do you want to add a passenger to?&quot;
+  airport.list_flights
+  flight_number = gets.chomp.to_i
+  flight = airport.flights[flight_number]
+
+  flight.add_passenger(passenger)
+  puts &quot;#{passenger.name} added to #{flight}&quot;
+  gets
+</code></pre><h4 id="list-passengers-of-a-flight">List passengers of a flight</h4>
+<p>The last task is to list the passengers of a flight. </p>
+<p>Let&apos;s pseudo-code again:</p>
+<ol>
+<li>List the flights</li>
+<li>Choose a flight</li>
+<li>Loop through the passengers array in a pretty way</li>
+</ol>
+<p>Let&apos;s list the flights:</p>
+<pre><code>when &apos;4&apos; # List passengers of a flight
+  puts &quot;What flight do you want to list the passengers of?&quot;
+  list_flights(airport)
+</code></pre><p>Then lets choose a flight:</p>
+<pre><code>  flight_number = gets.chomp.to_i
+  flight = airport.flights[flight_number]
+</code></pre><p>Then let&apos;s create the method to list_passengers for that flight instance:</p>
+<pre><code>def list_passengers(flight)
+  flight.passengers.each_with_index do |passenger, index|
+    puts &quot;#{index}. #{passenger.name}&quot;
+  end
+end
+</code></pre><p>It&apos;s very similar to the listing flight method.</p>
+<p>And implement in the menu:</p>
+<pre><code>when &apos;4&apos; # List passengers of a flight
+  puts &quot;What flight do you want to list the passengers of?&quot;
+  list_flights(airport)
+
+  flight_number = gets.chomp.to_i
+  flight = airport.flights[flight_number]
+
+  puts &quot;The passenger list for this flight is:&quot;
+  list_passengers(flight)
+  gets
+</code></pre><p>And we&apos;re done!</p>
+<p><br></p>
+<h2 id="closure">Closure</h2>
+<p>Now this isn&apos;t perfect. Why?</p>
+<ol>
+<li>No error handling</li>
+<li>Very basic</li>
+<li>Hard to work out what you are doing</li>
+<li>Have to re-run the file every time</li>
+<li>Memory isn&apos;t saved</li>
+</ol>
+<p>But we&apos;ve covered a lot of concepts here...</p>
+<p><br></p>
+<h3 id="deliverable">Deliverable</h3>
+<p>Example of finished code in airport directory.</p>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w2_d1_custom_classes_ruby.html" class="navigation navigation-prev " aria-label="Previous page: Custom Classes"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w2_d2_intro_to_tdd.html" class="navigation navigation-next " aria-label="Next page: TDD / JS / Front-End"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

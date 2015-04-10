@@ -1,0 +1,705 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Scopes in Javascript | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w2_d2_javascript_oop.html" />
+    
+    
+    <link rel="prev" href="./w2_d2_intro_to_tdd.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="6.1" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="scope-in-javascript">Scope in javascript</h1>
+<h2 id="what-is-scope">What is Scope ?</h2>
+<p>The JavaScript language has a few concepts of &quot;scope&quot;, none of which are straightforward or easy to understand as a new JavaScript developer (and even some experienced JavaScript developers). This post is aimed at those wanting to learn about the many depths of JavaScript after hearing words such as <code>scope</code>, <code>closure</code>, <code>this</code>, <code>namespace</code>, <code>function scope</code>, <code>global scope</code>, <code>lexical scope</code> and <code>public/private scope</code>.</p>
+<p>In JavaScript, scope refers to the current context of your code. Scopes can be <em>globally</em> or <em>locally</em> defined. Understanding JavaScript scope is key to writing bulletproof code and being a better developer. You&apos;ll understand where variables/functions are accessible, be able to change the scope of your code&apos;s context and be able to write faster and more maintainable code, as well as debug much faster.</p>
+<p>Thinking about scope is easy, are we inside <code>Scope A</code> or <code>Scope B</code>?</p>
+<h3 id="scope-types">Scope types</h3>
+<h4 id="global-scope">Global scope</h4>
+<p>Before you write a line of JavaScript, you&apos;re in what we call the <code>Global Scope</code>. If we declare a variable, it&apos;s defined globally:</p>
+<pre><code>// global scope
+var name = &apos;Todd&apos;;
+</code></pre><p>Global scope is your best friend and your worst nightmare, learning to control your scopes is easy and in doing so, you&apos;&apos;ll run into no issues with global scope problems (usually namespace clashes). You&apos;ll often hear people saying &quot;Global Scope is <em>bad</em>&quot;, but never really justifying as to <em>why</em>. Global scope isn&apos;t bad, you need it to create Modules/APIs that are accessible across scopes, you must use it to your advantage and not cause issues.</p>
+<h4 id="local-scope">Local scope</h4>
+<p>A local scope refers to any scope defined past the global scope. There is typically one global scope, and each function defined has its own (nested) local scope. Any function defined within another function has a local scope which is linked to the outer function.</p>
+<p>If I define a function and create variables inside it, those variables becomes locally scoped. Take this example:</p>
+<pre><code>// Scope A: Global scope out here
+var myFunction = function () {
+  // Scope B: Local scope in here
+};
+</code></pre><p>Any locally scoped items are not visible in the global scope - <em>unless</em> exposed, meaning if I define functions or variables within a new scope, it&apos;s inaccessible <em>outside</em> of that current scope. A simple example of this is the following:</p>
+<pre><code>var myFunction = function () {
+  var name = &apos;Todd&apos;;
+  console.log(name); // Todd
+};
+// Uncaught ReferenceError: name is not defined
+console.log(name);
+</code></pre><p>The variable <code>name</code> is scoped locally, it isn&apos;t exposed to the parent scope and therefore undefined.</p>
+<h4 id="function-scope">Function scope</h4>
+<p>All scopes in JavaScript are created with <code>Function Scope</code> <em>only</em>, they aren&apos;t created by <code>for</code> or <code>while</code> loops or expression statements like <code>if</code> or <code>switch</code>. New functions = new scope - that&apos;s the rule. A simple example to demonstrate this scope creation:</p>
+<pre><code>// Scope A
+var myFunction = function () {
+  // Scope B
+  var myOtherFunction = function () {
+    // Scope C
+  };
+};
+</code></pre><p>It&apos;s easy to create new scope and create local variables/functions/objects.</p>
+<h4 id="lexical-scope">Lexical Scope</h4>
+<p>Whenever you see a function within another function, the inner function has access to the scope in the outer function, this is called Lexical Scope or Closure - also referred to as Static Scope. The easiest way to demonstrate that again:</p>
+<pre><code>var myFunction = function () {
+  var name = &apos;Todd&apos;;
+  var myOtherFunction = function () {
+    console.log(&apos;My name is &apos; + name);
+  };
+  console.log(name);
+  myOtherFunction(); // call function
+};
+
+// Will then log out:
+// `Todd`
+// `My name is Todd`
+</code></pre><p>Lexical scope is easy to work with, <em>any</em> variables/objects/functions defined in <em>it&apos;s</em> parent scope, are available in the scope chain. For example:</p>
+<pre><code>var name = &apos;Todd&apos;;
+var scope1 = function () {
+  // name is available here
+  var scope2 = function () {
+    // name is available here too
+    var scope3 = function () {
+      // name is also available here!
+    };
+  };
+};
+</code></pre><p>The only important thing to remember is that Lexical scope does <em>not</em> work backwards. Here we can see how Lexical scope <em>doesn&apos;t</em> work:</p>
+<pre><code>// name = undefined
+var scope1 = function () {
+  // name = undefined
+  var scope2 = function () {
+    // name = undefined
+    var scope3 = function () {
+      var name = &apos;Todd&apos;; // locally scoped
+    };
+  };
+};
+</code></pre><p>I can always return a reference to <code>name</code>, but never the variable itself.</p>
+<h3 id="self-executing-anonymous-functions">Self-Executing Anonymous Functions</h3>
+<p>When learning JavaScript, with all the attention given to variables, functions, &apos;if&apos; statements, loops and event handlers, often little is done to educate you on how you might cleanly organise your code into a cohesive, structurally-sound whole.</p>
+<p>Let&apos;s take the following code for example:</p>
+<pre><code>var foo = &apos;Hello&apos;;
+var bar = &apos;World!&apos;;
+
+function baz(){
+  return foo  + &apos; &apos; + bar;
+}
+
+console.log(baz());
+</code></pre><p>This style of code looks quite normal, works fine and doesn&apos;t cause any problems. At least for now.</p>
+<p>This style of code, when implemented in a large application, can start to become an unwieldy mess. The global namespace becomes littered with functions and variables, all tenuously linked to each other through a combination of rudimentary comments and potentially unspoken developer knowledge.</p>
+<p>The first step on the journey to beautiful, modular JavaScript is to learn the art of the self-executing anonymous function.</p>
+<pre><code>(function(){
+  console.log(&apos;Hello World!&apos;);
+})();
+</code></pre><p>Let&apos;s look at this carefully. This code is made up of two key parts.</p>
+<p>First is the anonymous function:</p>
+<pre><code>(function(){
+  //Normal code goes here
+})
+</code></pre><p> |</p>
+<p>The really interesting part is what happens when we add this right at the end:</p>
+<pre><code>();
+</code></pre><p>Those two little brackets cause everything contained in the preceding parentheses to be executed immediately. What&apos;s useful here is that JavaScript has function level scoping. All variables and functions defined within the anonymous function aren&apos;t available to the code outside of it, effectively using closure to seal itself from the outside world.</p>
+<p>Let&apos;s apply this design patten to our gloriously inane example code.</p>
+<pre><code>(function(){
+  var foo = &apos;Hello&apos;;
+  var bar = &apos;World!&apos;
+
+  function baz(){
+      return foo + &apos; &apos; + bar;
+  }
+})();
+
+ //These all throw exceptions:
+console.log(foo);
+console.log(bar);
+console.log(baz());
+</code></pre><p> |</p>
+<p>The last three lines throw exceptions because currently nothing is accessible outside the anonymous function. To allow access to a variable or function, we need to expose it to the global &apos;window&apos; object.</p>
+<pre><code>(function(){
+  var foo = &apos;Hello&apos;;
+  var bar = &apos;World!&apos;
+
+  function baz(){
+      return foo + &apos; &apos; + bar;
+  }
+
+  window.baz = baz; //Assign &apos;baz&apos; to the global variable &apos;baz&apos;...
+})();
+
+console.log(baz()); //...and now this works.
+
+//It&apos;s important to note that these still won&apos;t work:
+console.log(foo);
+console.log(bar);
+</code></pre><p> |</p>
+<p>One of the major benefits of this pattern, as seen on the last two lines of the previous example, is that you can limit access to variables and functions within your closure, essentially making them private and only choosing to expose an API of your choice to the global scope.</p>
+<p>One popular spin on this design pattern, which can be seen in the [jQuery source][1], is to pass in some commonly used objects. In our code we reference &apos;window&apos;, so let&apos;s pass that in as a parameter to the anonymous function.</p>
+<h3 id="closures">Closures</h3>
+<p>Closures ties in very closely with Lexical Scope. A better example of how the <em>closure</em> side of things works, can be seen when returning a <em>function reference</em> - a more practical usage. Inside our scope, we can return things so that they&apos;re available in the parent scope:</p>
+<pre><code>var sayHello = function (name) {
+  var text = &apos;Hello, &apos; + name;
+  return function () {
+    console.log(text);
+  };
+};
+</code></pre><p>The <code>closure</code> concept we&apos;ve used here makes our scope inside <code>sayHello</code> inaccessible to the public scope. Calling the function alone will do nothing as it <em>returns</em> a function:</p>
+<pre><code>sayHello(&apos;Todd&apos;); // nothing happens, no errors, just silence...
+</code></pre><p>The function returns a function, which means it needs assignment, and <em>then</em> calling:</p>
+<pre><code>var helloTodd = sayHello(&apos;Todd&apos;);
+helloTodd(); // will call the closure and log &apos;Hello, Todd&apos;
+</code></pre><p>Okay, I lied, you <em>can</em> call it, and you may have seen functions like this, but this will call your closure:</p>
+<pre><code>sayHello2(&apos;Bob&apos;)(); // calls the returned function without assignment
+</code></pre><p>A function doesn&apos;t <em>have</em> to return in order to be called a closure though. Simply accessing variables outside of the immediate lexical scope creates a closure.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w2_d2_intro_to_tdd.html" class="navigation navigation-prev " aria-label="Previous page: TDD / JS / Front-End"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w2_d2_javascript_oop.html" class="navigation navigation-next " aria-label="Next page: OOP in Javascript"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

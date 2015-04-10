@@ -1,0 +1,15 @@
+<div class="profile">
+  <h1><%= @event.name %></h1>
+  <p>
+    <em>At <%= @event.club.try(:name) %></em>
+  </p>
+
+  <%= image_tag @event.image, class: "th" %>
+
+  <p><%= @event.description %></p>
+
+
+
+  <%= link_to 'Edit', edit_event_path(@event) %> |
+  <%= link_to 'Back', events_path %>
+</div>

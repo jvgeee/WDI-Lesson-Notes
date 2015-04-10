@@ -1,0 +1,695 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Custom Methods | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d5_enumerators_enumerables.html" />
+    
+    
+    <link rel="prev" href="./w1_d4_methods_and_blocks.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.4" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="custom-methods">Custom methods</h1>
+<h2 id="opening-functional-programming">Opening: Functional programming</h2>
+<p>Working with the built in methods of simple and complex data types (strings, integers, floats, arrays and hashes) is great and they offer us some really great functionality for free. However, we often want to create our own methods to send them to our own objects.</p>
+<h4 id="ask-the-class-why-do-we-need-functions">Ask the class: Why do we need functions?</h4>
+<p>Some reasons might include:</p>
+<ul>
+<li>We might want to re-use sections of code</li>
+<li>Easier to manage</li>
+<li>Easier to test</li>
+<li>Easier to scan read as it&apos;s modular </li>
+</ul>
+<h4 id="keep-your-code-dry">Keep your code DRY</h4>
+<p>DRY - is a guiding principle of coding (especially in Ruby).</p>
+<ul>
+<li><strong>D</strong>on&apos;t </li>
+<li><strong>R</strong>epeat </li>
+<li><strong>Y</strong>ourself</li>
+</ul>
+<p>The opposite is WET:</p>
+<ul>
+<li><strong>W</strong>rite <strong>E</strong>verything <strong>T</strong>wice </li>
+<li><strong>W</strong>e <strong>E</strong>njoy <strong>T</strong>yping</li>
+</ul>
+<p><br></p>
+<h2 id="we-do-custom-methods">We do: Custom methods</h2>
+<h4 id="create-new-file-in-working-directory">Create new file in working directory</h4>
+<pre><code>$ touch custom_methods.rb
+$ subl custom_methods.rb
+</code></pre><p>Add this code:</p>
+<pre><code>def say_hello
+  &quot;hello&quot;
+end
+
+puts say_hello
+</code></pre><p>We don&apos;t have to add parentheses <code>()</code> in order to call this method.</p>
+<p>Run this code using:</p>
+<pre><code>$ ruby custom_methods.rb
+</code></pre><p>The file will run from top to bottom and execute the custom method at the bottom of the page.</p>
+<h4 id="main">Main</h4>
+<blockquote>
+<p>We have to send messages to objects though?! </p>
+</blockquote>
+<p>I hear you scream. So, what is the <code>say_hello</code> method being called upon? When an object isn&apos;t explicitly named, the the method is called on <code>self</code>.</p>
+<p>Everything in Ruby occurs in the context of some object. The object at the top level is called <code>main</code>. It&apos;s basically an instance of the <code>Object</code> class with the special property that any methods defined there are added as instance methods of Object (so they&apos;re available everywhere).</p>
+<p><br></p>
+<h2 id="we-do-a-closer-look-at-arguments">We Do: A closer look at arguments</h2>
+<p>Custom methods you write in Ruby can take zero or more arguments. However, when you call a Ruby method, you have to supply the correct number of arguments.  </p>
+<h4 id="creating-an-argument-error">Creating an Argument Error</h4>
+<p>Lets use the method <code>.gets</code> to get a users name and pass an argument to the <code>say_hello</code> method.</p>
+<p>But let&apos;s not call the method with an argument.</p>
+<pre><code># In custom_methods.rb
+
+def say_hello(name)
+  &quot;hello #{name}&quot;
+end
+
+user = gets.chomp
+puts say_hello()
+</code></pre><p>Should give you:</p>
+<pre><code>custom_methods.rb:8:in `say_hello&apos;: wrong number of arguments (0 for 1) (ArgumentError)
+</code></pre><h4 id="fixing-an-argument-error">Fixing an Argument Error</h4>
+<p>Let&apos;s fix that by passing in user into the method:</p>
+<pre><code>def say_hello(name)
+  &quot;hello #{name}&quot;
+end
+
+user = gets.chomp
+puts say_hello(user)
+</code></pre><p><br></p>
+<h2 id="we-do-default-values-for-arguments">We Do: Default values for arguments</h2>
+<p>We can set a default value for an argument:</p>
+<pre><code>def say_hello(name=&quot;Alex&quot;)
+  &quot;hello #{name}&quot;
+end
+
+puts say_hello
+</code></pre><p><br></p>
+<h2 id="we-do-splat-arguments">We Do: Splat arguments</h2>
+<p>This syntax also allows you to take any number of arguments.</p>
+<p>Add this:</p>
+<pre><code>def say_hello(*names)
+  &quot;hello, #{names.join(&apos;, &apos;)}&quot;
+end
+
+puts say_hello &quot;Alex&quot;, &quot;James&quot;, &quot;John&quot;, &quot;Dave&quot;
+</code></pre><p>Despite the fact that you have to include the correct number of arguments when you call a method in Ruby, the splat gives a way of getting around it. </p>
+<pre><code>def say_hello(*names)
+  puts &quot;hello, #{names.join(&apos;, &apos;)}&quot;
+end
+
+puts say_hello
+</code></pre><h4 id="using-a-splat-as-a-sponge">Using a splat as a &apos;sponge&apos;</h4>
+<p>You can also use a splat as a &apos;sponge&apos; argument:</p>
+<pre><code>def mixed_args(a,b,*c)
+  puts &quot;Arguments:&quot;
+  p a,b,c
+end
+
+mixed_args(1,2,3,4,5,6,7,8)
+</code></pre><p>The splat will sponge up everything after the first two arguments:</p>
+<pre><code>Arguments:
+1
+2
+[3, 4, 5, 6, 7, 8]
+</code></pre><p><br></p>
+<h2 id="i-do-order-of-parameters-and-arguments">I Do: Order of parameters and arguments</h2>
+<p>A small aside, what would you expect from this code?</p>
+<pre><code>def mixed_args(a,b,*c,d)
+  puts &quot;Arguments:&quot;
+  p a,b,c,d
+end
+
+mixed_args(1,2,3,4,5,6,7,8)
+</code></pre><p>Would it break? This is what is produced:</p>
+<pre><code>Arguments:
+1
+2
+[3, 4, 5, 6, 7]
+8
+</code></pre><p>Basically Ruby tries to assign the &apos;named&apos; variables first from the left hand side and then backwards from the right. Then the sponge parameter grabs the rest of the arguments.</p>
+<p><br></p>
+<h2 id="i-do-good-method-names">I Do: Good method names</h2>
+<p>When writing method names and naming arguments, PLEASE make them descriptive. Ideally, you shouldn&apos;t need to write any comments.</p>
+<p>Take this:</p>
+<pre><code>def a(f,s)
+  f + s
+end
+
+a(2,3)
+</code></pre><p>Or:</p>
+<pre><code>def add(first_number, second_number)
+  first_number + second_number
+end
+
+add(2, 3)
+</code></pre><p>Which is easier to read?</p>
+<p><br></p>
+<h2 id="closure">Closure</h2>
+<p>We will look into the difference betwen a <em>Class Method</em> and an <em>Instance Method</em> in one of the lessons coming up in the next few days. At the moment, it&apos;s okay to define your methods on the <code>main</code>. </p>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d4_methods_and_blocks.html" class="navigation navigation-prev " aria-label="Previous page: Methods and Blocks"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d5_enumerators_enumerables.html" class="navigation navigation-next " aria-label="Next page: Enumerators and Enumerables"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

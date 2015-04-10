@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Controlling Flow with Ruby | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d4_arrays_hashes_symbols.html" />
+    
+    
+    <link rel="prev" href="./w1_d2_intro_to_ruby.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.1" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="control-flow">Control Flow</h1>
+<h2 id="opening">Opening</h2>
+<p>Programs don&apos;t always run in a staight line (top to bottom or left to right). Execution order is determined by a variety of rules and programming constructs.</p>
+<p>We collectively referred to these as to as control-flow techniques.</p>
+<p>We will be looking at:</p>
+<h4 id="conditional-execution-boolean-logic">Conditional execution &amp; boolean logic</h4>
+<ul>
+<li>Execution depends on the truth of an expression </li>
+</ul>
+<h4 id="looping">Looping</h4>
+<ul>
+<li>Where a single segment of code is executed repeatedly</li>
+</ul>
+<h4 id="iteration">Iteration</h4>
+<ul>
+<li>Where a call to a method is supplemented with a block that can be used repeatedly</li>
+</ul>
+<p><br></p>
+<h2 id="we-do-boolean-logical-operators">We Do: Boolean (logical) operators</h2>
+<p>In Ruby, we can use boolean logic to check for &apos;truthyness&apos; or &apos;falseyness&apos;. This is different to checking whether something equals true (an instance of the TrueClass) or false (an instance of the FalseClass).</p>
+<p>Remember, only true and false are Booleans.</p>
+<p>Open irb:</p>
+<pre><code>$ irb
+</code></pre><h4 id="or">or</h4>
+<pre><code>true || false
+=&gt; true
+
+false || true
+=&gt; true
+</code></pre><p>The right side is not evaluated if the left side is true. This is called short-circuit evaluation.</p>
+<h4 id="and">and</h4>
+<p>(Think of as both are true!)</p>
+<pre><code>false &amp;&amp; true
+=&gt; false
+
+true &amp;&amp; true
+=&gt; true
+
+false &amp;&amp; false
+=&gt; false
+</code></pre><p>If the left hand side is false, the right side won&apos;t be evaluated. This is another example of short-circuit evaluation.</p>
+<p>The one confusing and is:</p>
+<pre><code>nil &amp;&amp; true
+=&gt; nil
+</code></pre><p>In Ruby only nil and false are falsey, everything else is truthey including 0!</p>
+<h4 id="not">not</h4>
+<p>A bit like  &quot;the opposite of&quot;</p>
+<pre><code>!true
+=&gt; false
+
+!false
+=&gt; true
+
+x = &quot;hello&quot;
+=&gt; &quot;hello&quot;
+!x    
+=&gt; false
+# as &quot;hello&quot; is truthy
+
+x = nil
+=&gt; nil
+!x
+=&gt; true
+# as nil is falsey
+</code></pre><p><br></p>
+<h2 id="we-do-conditional-execution">We Do: Conditional execution</h2>
+<p>Ruby gives you a number of ways to control program flow on a condition basis.</p>
+<ul>
+<li><code>if</code> and related keywords</li>
+<li><code>case</code> statements</li>
+</ul>
+<h4 id="create-a-file">Create a file</h4>
+<pre><code>$ touch control_flow.rb
+</code></pre><h4 id="if">if</h4>
+<p>You can run some code conditionally <code>if</code> something is true:</p>
+<pre><code># in control_flow.rb
+
+puts &quot;hello&quot; if true
+</code></pre><p>This is called a &apos;conditional modifier&apos; and sometimes referred to as a &apos;guard&apos;.
+Test with:</p>
+<pre><code>$ ruby control_flow.rb
+</code></pre><h4 id="else">else</h4>
+<p>Let&apos;s create a multi-line <code>if</code> statement:</p>
+<pre><code># in control_flow.rb
+
+if true 
+  puts &quot;hello&quot; 
+else
+  puts &quot;bye&quot; 
+end
+</code></pre><p>Then run using:</p>
+<pre><code>$ ruby control_flow.rb
+</code></pre><p>You can also do this on one line using the <code>then</code> keyword:</p>
+<pre><code>if true then puts &quot;hello&quot; else puts &quot;bye&quot; end
+</code></pre><p>You can also do this using semi-colons to mimic the line-breaks:</p>
+<pre><code>if true; puts &quot;hello&quot;; else; puts &quot;bye&quot;; end
+</code></pre><p>I think you&apos;ll agree, the mutli-line is the easiest to read.</p>
+<h4 id="elsif">elsif</h4>
+<p>There is also an <code>elsif</code> keyword (with no e):</p>
+<pre><code># in control_flow.rb
+
+print &quot;Enter an integer: &quot;
+n = gets.to_i
+if n &gt; 0
+  puts &quot;Your number is positive.&quot;
+elsif n &lt; 0
+  puts &quot;Your number is negative.&quot;
+else
+  puts &quot;Your number is zero.&quot;
+end
+</code></pre><p>Notice that you can have a final <code>else</code> after multiple <code>elsif</code>&apos;s.</p>
+<h4 id="unless">unless</h4>
+<p>Similar to <code>if</code> is the <code>unless</code> keyword:</p>
+<pre><code># in control_flow.rb
+
+print &quot;Enter an integer: &quot;
+n = gets.to_i
+unless n &gt; 10
+  puts &quot;too small...&quot;
+else
+  puts &quot;LARGE number!&quot;
+end
+</code></pre><p>Sometimes <code>unless</code> is confusing. However, it does make sense when using guards:</p>
+<pre><code>user_registered = false
+puts &quot;Please signup!&quot; unless user_registered
+</code></pre><p><br></p>
+<h2 id="we-do-case-statements">We Do: Case Statements</h2>
+<p>A <code>case</code> statement starts with an expression - usually a single object or variable, but any expression can be used.</p>
+<pre><code># in control_flow.rb
+
+puts &quot;Exit the program? (yes or no): &quot;
+answer = gets.chomp
+
+case answer
+when &quot;yes&quot;
+  puts &quot;Good-bye!&quot;
+  exit 
+when &quot;no&quot;
+  puts &quot;OK, we&apos;ll continue&quot;
+else 
+  puts &quot;That&apos;s an unknown answer -- assuming you meant &apos;no&apos;&quot;
+end
+puts &quot;Continuing with the program...&quot;
+</code></pre><p><code>when</code> actually uses the three-equal-operator <code>===</code> behind the scenes.</p>
+<p><br></p>
+<h2 id="we-do-looping">We Do: Looping</h2>
+<p>Conditional looping in Ruby can be achieved using the keywords <code>while</code> and <code>until</code>. </p>
+<h4 id="while">while</h4>
+<pre><code># in control_flow.rb
+
+n = 1
+while n &lt; 11
+  puts n
+  n = n + 1
+end
+puts &quot;Done!&quot;
+</code></pre><p>As long as the condition <code>n &lt; 11</code> is true the loop with execute. With each loop n is incremented by 1 until the condition is false.</p>
+<h4 id="until">until</h4>
+<p>The <code>until</code> loop is the the same as the <code>while</code> loop but with reverse logic.</p>
+<pre><code># in control_flow.rb
+
+n = 1
+until n &gt; 10
+  puts n
+  n = n + 1
+end
+</code></pre><p>[i]: Optional, if time.</p>
+<h4 id="for">for</h4>
+<p><code>for</code> is a special Ruby keyword that indicates the beginning of the loop:</p>
+<pre><code># in control_flow.rb
+
+for i in 1..10
+  puts i
+end
+</code></pre><p><code>1..10</code> is a Range, It consists of a low and a high number separated by two dots. Basically, it is the set of integers from a to b, sequentially.</p>
+<p>You can read this entire line as: for every number in 1 to 10, run the following code block.</p>
+<p><code>for</code> is not very &quot;Ruby&quot;.</p>
+<h5 id="do">do</h5>
+<p>In the code block above, the <code>do</code> is optional in the code block</p>
+<pre><code>for i in 1..10 do
+  puts &quot;The number is #{i}&quot;
+end
+</code></pre><p>You can also write as:</p>
+<pre><code>for i in 1..10 { puts &quot;The number is #{i}&quot; }
+</code></pre><p><br></p>
+<p>[i]: End optional</p>
+<h2 id="we-do-controlling-the-loop">We Do: Controlling the loop</h2>
+<p>Sometimes, you want to exit out of a loop. There are a few keywords that you can use:</p>
+<h4 id="break">break</h4>
+<p>You might want to use <code>break</code> to stop the loop </p>
+<pre><code>for i in 0..5
+  break if i &gt; 2
+  puts &quot;The number is #{i}&quot;
+end
+</code></pre><h4 id="next">next</h4>
+<p><code>next</code> skips to the next iteration of the loop without finishing the current loop</p>
+<pre><code>n = 1
+while n &lt; 1000
+  n = n + 1
+  puts n
+  next unless n == 10
+  break
+end
+</code></pre><h4 id="redo-retry">redo, retry</h4>
+<p>There is also <code>redo</code> and <code>retry</code> but they aren&apos;t used much.</p>
+<p><br></p>
+<h2 id="i-do-infinite-loops">I Do: Infinite loops</h2>
+<p>The problem with loops is that if you don&apos;t get the logic right, they can be infinite.</p>
+<p><code>loop</code> is another method in Ruby that accepts a block like <code>for</code>. We will go into blocks in more detail in another lesson:</p>
+<pre><code>$ irb
+
+loop { puts &quot;looping forever&quot; }
+
+# ctrl+c to exit
+</code></pre><p>Just be careful!</p>
+<p><br></p>
+<h2 id="lab-make-a-maths-game">Lab: Make a maths game</h2>
+<p>Let&apos;s write a program that asks a user to guess the answer to a maths question, and loops until they get it right.</p>
+<p>Use <code>puts</code>, <code>gets</code>. It can be any maths problem. </p>
+<p><br></p>
+<h2 id="deliverable">Deliverable</h2>
+<p>Run the file: </p>
+<pre><code>$ ruby control_flow_lab.rb
+</code></pre><p><br></p>
+<h2 id="closure">Closure</h2>
+<p>Loops are really useful to do lots of calculations really quicky. Some of these methods of looping are not very &quot;Rubyish&quot;.</p>
+<p>We often use Enumerable methods to achieve looping. We will look at this in more detail in a future lesson.</p>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d2_intro_to_ruby.html" class="navigation navigation-prev " aria-label="Previous page: Intro to Ruby"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d4_arrays_hashes_symbols.html" class="navigation navigation-next " aria-label="Next page: Arrays, Hashes and Symbols"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

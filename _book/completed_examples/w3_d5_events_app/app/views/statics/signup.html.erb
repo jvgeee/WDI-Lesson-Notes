@@ -1,0 +1,57 @@
+<ul class="example-orbit-content" data-orbit>
+  <li data-orbit-slide="headline-1">
+    <div>
+      <h2>Find the clubs in your city</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <div>
+      <h2>Explore the events in the clubs</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <div>
+      <h2>See who likes the clubs</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+</ul>
+
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Cities</a></li>
+  <li class="tab-title"><a href="#panel2">Clubs</a></li>
+  <li class="tab-title"><a href="#panel3">Events</a></li>
+  <li class="tab-title"><a href="#panel4">Users</a></li>
+  <li class="tab-title"><a href="#panel5">Likes</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <h2>Cities</h2>
+    <%= render @cities %>
+  </div>
+  <div class="content" id="panel2">
+    <h2>Clubs</h2>
+    <%= render @clubs %>
+  </div>
+  <div class="content" id="panel3">
+    <h2>Events</h2>
+    <%= render @events %>
+  </div>
+  <div class="content" id="panel4">
+    <h2>Users</h2>
+    <%= render @users %>
+  </div>
+  <div class="content" id="panel5">
+    <h2>Likes</h2>
+    <%= render @likes %>
+  </div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,930 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Intro to Ruby | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w1_d2_control_flow_ruby.html" />
+    
+    
+    <link rel="prev" href="./w1_d2_git_and_github.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="intro-to-ruby">Intro to Ruby</h1>
+<p>[i]: Ask questions if you don&apos;t understand...
+[i]: There is quite a lot of content in this lesson.</p>
+<h2 id="opening-ruby-ruby-and-ruby">Opening: Ruby, ruby and RUBY</h2>
+<p>We&apos;re going to look at one of our core programming languages on this course, Ruby. But what is it called?</p>
+<h4 id="write-on-the-board">Write on the board</h4>
+<ul>
+<li><strong>Ruby</strong> is the name of the programming language</li>
+<li><strong>ruby</strong> (lowercase) is the name of a computer program, the Ruby interpreter</li>
+<li><strong>RUBY</strong> Doesn&apos;t exist, it isn&apos;t an acronym (don&apos;t put that on your CV)</li>
+</ul>
+<p><br> </p>
+<h2 id="i-do-what-is-ruby">I Do: What is Ruby?</h2>
+<p>Created in 1995 by Yukihiro Matsumoto: </p>
+<p><img src="matz.png" alt="image"></p>
+<blockquote>
+<p><cite>&quot;I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language.&quot;</cite></p>
+</blockquote>
+<p>Matz is just great.</p>
+<h4 id="intepreted-scripting-language">Intepreted scripting language</h4>
+<p>Ruby is an <strong>interpreted scripting language</strong>. Some computer languages need to first be <strong>compiled</strong> into machine-language before they can be run. An interpreted language uses a program called an <strong>interpreter</strong> (ruby) to convert the written code, called <strong>scripts</strong>, into a sequence of subroutines that were already compiled into machine code, on the fly.</p>
+<p><strong>You don&apos;t need to know how this works...</strong></p>
+<h4 id="why-should-we-use-one-language-over-the-other">Why should we use one language over the other?</h4>
+<p>Compiled code is often faster, but intepreted code allows us to do things dynamically.</p>
+<p>Ruby is compiled in C. If you want to read more about how that works, read <a href="http://patshaughnessy.net/ruby-under-a-microscope" target="_blank">Ruby Under a Microscope</a>.</p>
+<p><br></p>
+<h2 id="we-do-irb-your-new-best-friend">We Do: Irb, your new best friend</h2>
+<p><strong>Ruby</strong> (the language) is shipped with another command-line tool that is different than <strong>ruby</strong> (the intepreter), it&apos;s called <strong>irb</strong> the interactive console. Shell</p>
+<p>Why is it called irb? Because of .rb files.</p>
+<p>Irb is an example of a <strong>REPL</strong>: </p>
+<ul>
+<li>Read</li>
+<li>Evaluate</li>
+<li>Print</li>
+<li>Loop</li>
+</ul>
+<p>It&apos;s great for evaluating short snippets of code.</p>
+<p>Make friends because you are going to get very, very familiar.</p>
+<h5 id="let-s-start-using-irb">Let&apos;s start using irb</h5>
+<pre><code>$ irb
+</code></pre><p>Open <strong>irb</strong></p>
+<p>You can also open a slightly simpler irb using:</p>
+<pre><code>$ irb --simple-prompt
+</code></pre><p>Let&apos;s just do a quick sum:</p>
+<pre><code>100 + 32
+=&gt; 132
+</code></pre><h5 id="exiting-irb">Exiting irb</h5>
+<p>In order to exit irb, you can type:</p>
+<pre><code>exit
+quit
+ctrl + d
+</code></pre><p><br></p>
+<h2 id="i-do-everything-in-ruby-is-an-object">I Do: Everything in Ruby is an Object</h2>
+<p>Repeat after me: </p>
+<ul>
+<li><strong>Teacher:</strong> Everything in Ruby is an object.</li>
+<li><strong>Class:</strong> Everything in Ruby is an object.</li>
+<li><strong>Teacher:</strong> Everything in Ruby is an object.</li>
+</ul>
+<p>And every object is and example or instance of a particular &apos;Class&apos; or <strong>type of object</strong>. </p>
+<h4 id="real-world-example">Real world example</h4>
+<p>Just like this computer is an instance of a computer class, and a chair is an instance of a chair class... Everything is an object in Ruby.</p>
+<h4 id="strings-integers-floats">Strings, Integers, Floats</h4>
+<p>We&apos;re going to cover <strong>Object Oriented Programming</strong> (OOP) in much more depth later, but for now, if we want to know what type of Object something is, we can ask it with the method <code>.class</code></p>
+<pre><code>$irb
+
+1.class
+=&gt; Fixnum
+
+&quot;1&quot;.class
+=&gt; String
+
+1.0.class
+=&gt; Float 
+
+# The same as:
+(1.0).class
+=&gt; Float
+</code></pre><p>We call these data-types, however in Ruby they are all still objects. I understand this is a confusing concept at the moment but it will become clearer.</p>
+<p>Just remember, <strong>everything in Ruby is an object</strong>.</p>
+<h4 id="booleans">Booleans</h4>
+<p>There is one other datatype that you should be aware of, Booleans - <code>true</code> and <code>false</code>. (They are also Objects in Ruby).</p>
+<pre><code>true.class
+=&gt; TrueClass
+
+false.class
+=&gt; FalseClass
+</code></pre><p>These are examples of <strong>special objects</strong> in Ruby.</p>
+<p>There is another special object that you will come across:</p>
+<pre><code>nil.class
+=&gt; NilClass
+</code></pre><p>There is no NULL in Ruby.</p>
+<p><br></p>
+<h2 id="assess-datatypes">Assess: Datatypes</h2>
+<p>Write on the board:</p>
+<ul>
+<li>Integers</li>
+<li>Floats</li>
+<li>Strings</li>
+<li>Booleans </li>
+</ul>
+<p><br></p>
+<h2 id="we-do-basic-operations-in-ruby">We do: Basic operations in Ruby</h2>
+<h4 id="number-arithmetic">Number Arithmetic</h4>
+<p>Similar to a calculator you can do arithmetic operations in ruby</p>
+<table>
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arithmetic</td>
+<td><code>2+3</code> (addition)</td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>2-3</code> (subtraction)</td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>2*3</code> (multiplication)</td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>2/3</code> (division)</td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>2**2</code>(power of)</td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>10%1</code>(modulus)</td>
+</tr>
+</tbody>
+</table>
+<p>Does anyone know what modulus is?</p>
+<p>In irb:</p>
+<pre><code>2 + 3
+=&gt; 5
+</code></pre><h4 id="string-arithmetic">String Arithmetic</h4>
+<p>You can also perform arithmetic on strings:</p>
+<pre><code>&quot;5&quot; + &quot;5&quot;
+=&gt; &quot;55&quot;
+</code></pre><p>This is called <strong>string concatenation</strong>.</p>
+<h3 id="duck-typing">Duck typing</h3>
+<p>What happens if we do:</p>
+<pre><code>5 / 2
+=&gt; 2
+</code></pre><p>Have we broken Ruby? No, we have given ruby two Integers (no decimal places) so ruby gives us an Integer back.</p>
+<p>However, if we divide an Integer by a Float</p>
+<pre><code>5 / 2.0
+=&gt; 2.5
+</code></pre><p>This is called &quot;Type Coercion&quot; also known as &quot;Duck Typing&quot;, where Ruby now knows that we want a Float back.</p>
+<p>If an object quacks like a duck (or acts like a string), just go ahead and treat it as a duck (or a string).</p>
+<p><br></p>
+<h2 id="we-do-mixing-object-types">We do: Mixing Object types?</h2>
+<p>Integers and Floats share a few similarities, they are both Numeric. However, what if we did:</p>
+<pre><code>&quot;5&quot; + 5
+=&gt; TypeError: no implicit conversion of Fixnum into String
+</code></pre><p>You will get to know this error really well. <strong>You can&apos;t divide a computer by a chair!</strong></p>
+<p>You might also see this:</p>
+<pre><code>&quot;5&quot; / 2.0
+=&gt; NoMethodError: undefined method `/&apos; for &quot;5&quot;:String
+</code></pre><p>Which means, a String can&apos;t divide, just like a Chair can&apos;t fly.</p>
+<p><br></p>
+<h2 id="we-do-converting-object-types">We Do: Converting object types</h2>
+<h4 id="string-to-integer">String-to-integer</h4>
+<p>Now that we have looked at some of the basic data-types, lets look at how to convert from one type to another:</p>
+<pre><code>.to_i
+</code></pre><p>This is the string-to-integer conversion. We call <code>to_i</code> on an instance of a string to convert it to an integer.</p>
+<pre><code>&quot;5&quot;.to_i
+=&gt; 5
+</code></pre><p>This sometimes gives unexpected results:</p>
+<pre><code>&quot;Hello&quot;.to_i
+=&gt; 0
+
+&quot;4vid&quot;.to_i
+=&gt; 4
+
+&quot;vid4&quot;.to_i
+=&gt; 0
+</code></pre><h4 id="integer-to-string">Integer-to-string</h4>
+<p>You can also use the method:</p>
+<pre><code>.to_s
+</code></pre><p>To convert something to a integer-to-string.</p>
+<pre><code>1.to_s
+=&gt; &quot;1&quot;
+</code></pre><h4 id="summary">Summary</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion</td>
+<td><code>&quot;100&quot;.to_i</code> (string-to-integer)</td>
+</tr>
+<tr>
+<td>Conversion</td>
+<td><code>52.to_s</code> (integer-to-string)</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="i-do-ruby-identifiers">I Do: Ruby Identifiers</h2>
+<p>There are a few different types of identifiers in Ruby, but we&apos;re just going to look at <strong>one</strong> for the moment.</p>
+<h3 id="local-variables">Local Variables</h3>
+<p>We can store values in <strong>local variables</strong>. Variables: </p>
+<ul>
+<li>Start with a lowercase letter or underscore</li>
+<li>Consist of letters or underscores and/or digits</li>
+<li>It is a convention to use <strong>lower_snake_case</strong> for local variables</li>
+</ul>
+<pre><code>first_name
+</code></pre><p><br> </p>
+<h2 id="we-do-assignment">We Do: Assignment</h2>
+<p>We can assign objects to variables using <code>=</code></p>
+<pre><code>a = 1
+=&gt; 1
+
+a 
+=&gt; 1
+</code></pre><p>We can assign variables to equal other variables</p>
+<pre><code>a = 1
+=&gt; 1
+b = 2
+=&gt; 2
+a
+=&gt; 1
+a = b
+=&gt; 2
+a 
+=&gt; 2
+</code></pre><p>They&apos;re are called variables because the assigned values can change (we also call this &apos;mutability&apos;).</p>
+<h4 id="summary">Summary</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assignment</td>
+<td><code>a = &quot;hello&quot;</code></td>
+</tr>
+<tr>
+<td>Assignment</td>
+<td><code>b = 52</code></td>
+</tr>
+</tbody>
+</table>
+<p><br> </p>
+<h2 id="we-do-comparison-equality">We do: Comparison &amp; equality</h2>
+<p>Often we want to compare whether values or variables are equal, or indeed not equal:</p>
+<pre><code>1 == 1
+=&gt; true
+
+1 == 2
+=&gt; false
+
+# Now using variables
+a = 1
+=&gt; 1
+
+b = 2
+=&gt; 2
+
+a == b
+=&gt; false
+</code></pre><p>Let&apos;s try:</p>
+<pre><code>1 != 2
+=&gt; true
+</code></pre><p>We can also evaluate whether one value is greater than or less than another value:</p>
+<pre><code>1 &gt; 2
+=&gt; false
+
+2 &lt; 1
+=&gt; true 
+
+1 &gt;= 1
+=&gt; 2
+</code></pre><p>This also works with strings:</p>
+<pre><code>&quot;a&quot; &gt; &quot;b&quot;
+=&gt; false
+
+&quot;b&quot; &gt; &quot;a&quot;
+=&gt; true
+
+&quot;a&quot; &gt; &quot;A&quot; 
+=&gt; true
+</code></pre><p>Capital &apos;A&apos; comes before lower-case &apos;a&apos; in the ASCII character-set - so is &apos;smaller&apos;.</p>
+<h4 id="summary">Summary</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparison</td>
+<td><code>x == y</code></td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td><code>y != 42</code></td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td><code>1 &gt; 2</code></td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td><code>500 &lt; 501</code></td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td><code>3 &gt;= 3</code></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="we-do-loading-a-ruby-file">We do: Loading a Ruby file</h2>
+<p>It&apos;s useful using a REPL to evaluate small chunks of code. However, sometimes we need to save code into files.</p>
+<p><strong>Navigate to working directory or desktop.</strong></p>
+<pre><code>$ mkdir intro_to_ruby &amp;&amp; intro_to_ruby
+$ touch file.rb
+$ subl file.rb
+</code></pre><p>Then inside the file add:</p>
+<pre><code>3 + 2
+</code></pre><p>And run the file using the ruby interpreter:</p>
+<pre><code>$ ruby file.rb
+</code></pre><p>NOTHING HAPPENS?</p>
+<p><br></p>
+<h2 id="we-do-basic-file-input-output">We do: Basic file input &amp; output</h2>
+<h4 id="file-output">File Output</h4>
+<p>The program has run but we need to get the file to output our result to the command line. For this we need to use the Ruby method ```print````:</p>
+<pre><code># In file.rb
+print 3 + 2
+
+$ ruby file.rb
+=&gt; 5
+</code></pre><p>We can also use <code>puts</code> which is the same except that a newline is added to the string that is output.</p>
+<pre><code># In file.rb
+puts 3 + 2
+
+$ ruby file.rb
+=&gt; 5
+</code></pre><h4 id="file-input">File Input</h4>
+<p>When we want to get an input from the user, we can use <code>gets</code>. Which means get string (everything entered into the CLI is text).</p>
+<pre><code># In file.rb
+answer = gets
+puts answer
+
+$ ruby file.rb
+</code></pre><p>As <code>gets</code> actually records when you press enter, so we can also use <code>.chomp</code> to remove that newline:</p>
+<pre><code>answer = gets.chomp
+puts answer
+
+$ ruby file.rb
+</code></pre><p><br></p>
+<h2 id="closure">Closure</h2>
+<p>It&apos;s important to remember that there are lots of different programming languages. Ruby is just one, however it&apos;s design is argueably one of the nicest and well thought out. This is why we use it.</p>
+<p>We want you to be happy, just like Matz wants.</p>
+<p><br> </p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w1_d2_git_and_github.html" class="navigation navigation-prev " aria-label="Previous page: Git and Github"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w1_d2_control_flow_ruby.html" class="navigation navigation-next " aria-label="Next page: Controlling Flow with Ruby"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

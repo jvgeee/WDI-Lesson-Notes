@@ -1,0 +1,29 @@
+<div class="profile">
+  <h1><%= @club.name %></h1>
+  <p>
+    <em><%= @club.city.try(:name) %></em>
+  </p>
+
+  <%= image_tag @club.image, class: "th" %>
+
+  <p><%= @club.description %></p>
+
+  <%= link_to 'Edit', edit_club_path(@club) %> |
+  <%= link_to 'Back', clubs_path %>
+</div>
+
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Events</a></li>
+  <li class="tab-title"><a href="#panel2">Likes <span class="[success alert secondary] [round radius] label"><%= @likes_count %></span></a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <h2>Events</h2>
+    <%= render @events %>
+  </div>
+  <div class="content" id="panel2">
+    <h2>Likes</h2>
+    <%= render @likes %>
+  </div>
+</div>
+

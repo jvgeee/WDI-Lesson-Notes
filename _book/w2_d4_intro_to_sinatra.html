@@ -1,0 +1,696 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Intro to Sinatra and Databases | WDI MELB2 Lesson Notes &amp; Completed Examples</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./w2_d4_sinatra_post.html" />
+    
+    
+    <link rel="prev" href="./w2_d3_intro_to_css.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="7" data-basepath="." data-revision="Fri Apr 10 2015 10:07:09 GMT+1000 (AEST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="w1_d1_effective_text_editing.html">
+            
+                
+                    <a href="./w1_d1_effective_text_editing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Effective Text Editing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="w1_d3_rtfm_finding_things_out.html">
+            
+                
+                    <a href="./w1_d3_rtfm_finding_things_out.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Working Things Out, or: Read The F&#39;n Manual!
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="w1_d2_intro_to_cli.html">
+            
+                
+                    <a href="./w1_d2_intro_to_cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Intro to CLI
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="w1_d2_git_and_github.html">
+            
+                
+                    <a href="./w1_d2_git_and_github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Git and Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="w1_d2_intro_to_ruby.html">
+            
+                
+                    <a href="./w1_d2_intro_to_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Intro to Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="w1_d2_control_flow_ruby.html">
+            
+                
+                    <a href="./w1_d2_control_flow_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Controlling Flow with Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="w1_d4_arrays_hashes_symbols.html">
+            
+                
+                    <a href="./w1_d4_arrays_hashes_symbols.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Arrays, Hashes and Symbols
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="w1_d4_methods_and_blocks.html">
+            
+                
+                    <a href="./w1_d4_methods_and_blocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Methods and Blocks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="w1_d4_custom_methods.html">
+            
+                
+                    <a href="./w1_d4_custom_methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Custom Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="w1_d5_enumerators_enumerables.html">
+            
+                
+                    <a href="./w1_d5_enumerators_enumerables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Enumerators and Enumerables
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="w2_d1_oop_ruby.html">
+            
+                
+                    <a href="./w2_d1_oop_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        OOP in Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="w2_d1_custom_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_custom_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Custom Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="w2_d1_multiple_classes_ruby.html">
+            
+                
+                    <a href="./w2_d1_multiple_classes_ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Multiple Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="w2_d2_intro_to_tdd.html">
+            
+                
+                    <a href="./w2_d2_intro_to_tdd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        TDD / JS / Front-End
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="w2_d2_scopes-in_javascript.html">
+            
+                
+                    <a href="./w2_d2_scopes-in_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Scopes in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="w2_d2_javascript_oop.html">
+            
+                
+                    <a href="./w2_d2_javascript_oop.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        OOP in Javascript
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="w2_d3_intro_to_html.html">
+            
+                
+                    <a href="./w2_d3_intro_to_html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Intro to HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="w2_d3_intro_to_css.html">
+            
+                
+                    <a href="./w2_d3_intro_to_css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Intro to CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="7" data-path="w2_d4_intro_to_sinatra.html">
+            
+                
+                    <a href="./w2_d4_intro_to_sinatra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Intro to Sinatra and Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="w2_d4_sinatra_post.html">
+            
+                
+                    <a href="./w2_d4_sinatra_post.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Sinatra Post
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="w3_d1_intro_to_databases.html">
+            
+                
+                    <a href="./w3_d1_intro_to_databases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Intro to Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="w3_d2_sinatra_active_record.html">
+            
+                
+                    <a href="./w3_d2_sinatra_active_record.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Sinatra Active Record
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >WDI MELB2 Lesson Notes &amp; Completed Examples</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="intro-to-sinatra">Intro to Sinatra</h1>
+<h2 id="opening">Opening</h2>
+<p>Sinatra is a light-weight Ruby web framework</p>
+<ul>
+<li>It handles serving pages for requests, but leaves pretty much everything else to us</li>
+<li><a href="http://www.sinatrarb.com" target="_blank">The Sinatra docs</a></li>
+</ul>
+<p>We can install it using a gem:</p>
+<pre><code>gem install sinatra sinatra-contrib
+</code></pre><p>[i]: <a href="https://github.com/sinatra/sinatra-contrib" target="_blank">https://github.com/sinatra/sinatra-contrib</a> # some common extensions to Sinatra we might find useful</p>
+<p><br></p>
+<h2 id="i-do-what-is-a-web-framework">I Do: What is a web framework?</h2>
+<p>A web framework is a code library that makes a developer&apos;s life easier when building reliable, scalable and maintainable web applications.</p>
+<p>Frameworks make it easier to reuse code for common HTTP operations and to structure projects so developers with knowledge of the framework can more quickly build and maintain the application.</p>
+<p>Lazy programmers can&apos;t be bothered to reinvent the wheel!</p>
+<p><br></p>
+<h2 id="i-do-mvc-diagram">I Do: MVC Diagram</h2>
+<p>Let&apos;s have a quick look at a MVC diagram:</p>
+<p><img src="mvc_diagram.png" alt="image"></p>
+<p>Sinatra basically lets you create an app quickly.</p>
+<p><br></p>
+<h2 id="we-do-my-first-sinatra-website">We Do: My first Sinatra website</h2>
+<p>Let&apos;s first create a file:</p>
+<pre><code>$ mkdir sinatra_intro
+$ touch main.rb
+</code></pre><p>Then add this code:</p>
+<pre><code># hi.rb
+require &apos;sinatra&apos;
+</code></pre><p>Requiring sinatra will start a server for Sinatra::Application. This is called a classic Sinatra application.</p>
+<h4 id="creating-an-action">Creating an action</h4>
+<p>You now have a sinatra app. However, we need to create an action.</p>
+<pre><code>get &apos;/hi&apos; do
+  &quot;Hello World!&quot;
+end
+</code></pre><p>In order to create an action, we need to use:</p>
+<ul>
+<li>An HTTP verb, get, post, put, patch.</li>
+<li>A path as a string, &apos;/hi&apos;</li>
+<li>A code block, to run when these two are matched, e.g. GET request to /hi</li>
+</ul>
+<p>Then run the app with:</p>
+<pre><code>ruby hi.rb
+</code></pre><p>You will see this:</p>
+<pre><code>== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from Thin
+Thin web server (v1.6.3 codename Protein Powder)
+Maximum connections set to 1024
+Listening on localhost:4567, CTRL+C to stop
+</code></pre><p>Navigate to <code>localhost:4567/hi</code> in your browser.</p>
+<p><br></p>
+<h2 id="we-do-sinatra-reloader">We Do: Sinatra reloader</h2>
+<p>When we launch the website, we&apos;re running the application &quot;as is&quot;. If we change the application, then this change won&apos;t be seen in the browser. Let&apos;s have a look:</p>
+<pre><code>get &apos;/hi&apos; do
+  &quot;Hello&quot;
+end
+</code></pre><p>We can add something called sinatra reloader to the top of our app:</p>
+<pre><code>require &apos;sinatra&apos;
+require &apos;sinatra/reloader&apos; if development?
+</code></pre><p>Then stop the server, with <code>ctrl+C</code>. You will see:</p>
+<pre><code>^CStopping ...
+Stopping ...
+== Sinatra has ended his set (crowd applauds)
+</code></pre><p>Then restart again with <code>ruby main.rb</code>. And make a change and reload.</p>
+<p><br></p>
+<h4 id="puts-print">puts &amp; print</h4>
+<p>If you use any <code>puts</code> or <code>print</code> calls, their output will appear on the terminal console, not in the browser.</p>
+<pre><code>get &apos;/hi&apos; do
+  puts &quot;hi&quot;
+  &quot;Hello world&quot;
+end
+</code></pre><p><br> </p>
+<h2 id="we-do-add-a-homepage">We Do: Add a homepage</h2>
+<p>Let&apos;s create another action for the homepage</p>
+<pre><code>get &apos;/&apos; do
+  &apos;this is the homepage&apos;
+end
+</code></pre><p><br></p>
+<h2 id="we-do-params-in-the-path">We Do: Params in the path</h2>
+<p>Let&apos;s create a new action that accepts a parameter in it&apos;s path:</p>
+<p>Route patterns may include named parameters, accessible via the params hash:</p>
+<pre><code>get &apos;/friends/:name&apos; do
+  &quot;This friend&apos;s name is: #{params[:name]}&quot;
+end
+</code></pre><p>Now navigate to <code>/friends/alex</code> and <code>/friends/ben</code>.</p>
+<p>You can make this more complicated:</p>
+<pre><code>get &apos;/friends/:first/:last/:age&apos; do
+  &quot;your name is #{params[:first]} #{params[:last]} and you are #{params[:age]} years old&quot;
+end
+</code></pre><p>Now navigate to <code>/friends/alex/chin/27</code>.</p>
+<p><br></p>
+<h2 id="we-do-erb">We Do: Erb</h2>
+<p>So far, Sinatra is handling out routes using some custom actions and just returning text to the browser. </p>
+<p>This is a bit boring if we want to do interesting things with out application.</p>
+<p>Let&apos;s render a page:</p>
+<p>Let&apos;s change:</p>
+<pre><code>get &apos;/&apos; do
+  erb :home
+end
+</code></pre><h4 id="what-is-erb">What is erb?</h4>
+<p>Erb is Ruby&apos;s in-built templating language. It&apos;s basically html that let&apos;s you put some Ruby in it that gets execulted and compiled into HTML before it is sent back to the browser.</p>
+<h4 id="the-views-folder">The views folder</h4>
+<p>Sinatra looks for you to put view files in a specific folder called views.</p>
+<pre><code>$ mkdir views
+</code></pre><p>Let&apos;s create a new file:</p>
+<pre><code>$ touch views/home.erb
+</code></pre><p>Inside the home file:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is the homepage.&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4 id="using-an-instance-variable">Using an instance variable.</h4>
+<p>In order to render some content in the browser, we need to create an instance variable. We do this by using an <code>@</code></p>
+<pre><code>get &apos;/&apos; do
+  @header = &quot;Homepage&quot;
+  erb :home
+end
+</code></pre><p>We then use erb tags to print this out in the view:</p>
+<pre><code> &lt;h1&gt;&lt;%= @header %&gt;&lt;/h1&gt;
+</code></pre><p><br></p>
+<h2 id="we-do-public-folder">We Do: Public folder</h2>
+<p>Let&apos;s add a stylesheet to Sinatra. The default place that Sinatra will look for files that you want to display in the browser is called public:</p>
+<pre><code>$ mkdir public
+</code></pre><p>Create a stylesheet:</p>
+<pre><code>$ touch public/style.css
+</code></pre><p>Add the stylesheet to the erb page:</p>
+<pre><code>&lt;link rel=&apos;stylesheet&apos; href=&apos;/style.css&apos;&gt;
+</code></pre><p>Add some content to css:</p>
+<pre><code>body {
+  background: red;
+}
+</code></pre><p><br></p>
+<h2 id="we-do-rest">We Do: REST</h2>
+<p>Notice the fact that we haven&apos;t really used REST in this app. This is basically because we don&apos;t have a &apos;resource&apos; in this example. We could make it RESTful, but I don&apos;t think that&apos;s the point of this lesson.</p>
+<p><br></p>
+<h2 id="closure">Closure</h2>
+<p>You can make Sinatra as complex as you want really. It&apos;s very customizable. </p>
+<p><br></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./w2_d3_intro_to_css.html" class="navigation navigation-prev " aria-label="Previous page: Intro to CSS"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./w2_d4_sinatra_post.html" class="navigation navigation-next " aria-label="Next page: Sinatra Post"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
