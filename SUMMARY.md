@@ -21,6 +21,7 @@
    * [Intro to HTML](w2_d3_intro_to_html.md)
    * [Intro to CSS](w2_d3_intro_to_css.md)
    * [Manipulating the DOM](w4_d1_manipulating_the_dom.md)
+   * Javascript DOM Events
 * [Intro to Sinatra and Databases](w2_d4_intro_to_sinatra.md)
    * [Sinatra Post](w2_d4_sinatra_post.md)
    * [Intro to Databases](w3_d1_intro_to_databases.md)
